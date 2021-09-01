@@ -10,24 +10,37 @@
   
   <div class="container">
 
-    <section>
+    <section id='home'>
       <header>
         <figure>
           <img src="img/logoGabriela.png">
         </figure>
         <h1>abriela Mistral</h1>
       </header>
+      <main>
 
-      <p>Lucila Godoy Alcayaga​, mejor conocida como Gabriela Mistral, fue una poetisa Chilena de gran renombre internacional. Su obra publicada en muchos idiomas, nos asombra hasta el día de hoy por mantener una prosa exquisita y por ser una mujer adelantada a su época.</p>
-      <p>Poco se sabía de su vida personal, hasta hace unos años que se reveló la correspondencia que mantenía con su asistente Doris Dana. Estas cartas atemporales nos revelan que por mucho que pasen los años, el amor trasciende en el tiempo y estas cartas necesitan ser reveladas en esta deuda histórica que mantiene Chile con la poetisa.</p>
-      
-      <div class="homeBtn">
-        <button type="button" onclick="alert('ITS ALIVEEE!!')" id='startButton'>Saber más</button>
-      </div>
-    </section>
+        <p>Hasta hace unos años se reveló la correspondencia que mantenía la poetisa con su asistente Doris Dana.</p> 
+        <p>Estas cartas necesitan ser reveladas en esta deuda histórica que mantiene Chile con la escritora.</p>
+        <p>Descifra el contenido de estas cartas.</p>
+        
+        <div class="homeBtn" id="showCipher"><button type="button">Comencemos</button>
+        </div>  
+      </section>
+  
+      <section style="display: none;" id="cipher">
+        <h3>Aquí irán las instrucciones.</h3>
+        <div class="entryText"><textarea name="textarea" rows="10" cols="20" placeholder="Ingresa el texto a cifrar aquí (sin Ñ)"></textarea></div>
+        <br>
+        <div class="centerCipher">
+          <input id="offsetNumber"  type='number' min='1' max='26'></input>
+          <button type="button" class="cipherBtn" id="code">Cifrar</button>
+          <button type="button" class="cipherBtn" id="deCode">Descifrar</button>
+        </div>
+        <br>
+        <div class="entryText"><textarea name="textarea" rows="10" cols="20" placeholder="Acá estará tu mensaje crifrado."></textarea></div>
+      </section>
+      </main>
   </div>
-    
     <script src="index.js" type="module"></script>
-
   </body>
 </html>
