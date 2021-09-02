@@ -5,11 +5,8 @@
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-  
   <div class="container">
-
     <section id='home'>
       <header>
         <figure>
@@ -18,28 +15,50 @@
         <h1>abriela Mistral</h1>
       </header>
       <main>
-
-        <p>Hasta hace unos años se reveló la correspondencia que mantenía la poetisa con su asistente Doris Dana.</p> 
-        <p>Estas cartas necesitan ser reveladas en esta deuda histórica que mantiene Chile con la escritora.</p>
-        <p>Descifra el contenido de estas cartas.</p>
-        
+        <h2>Hasta hace unos años se reveló la correspondencia que mantenía la poetisa con su asistente Doris Dana.</h2> 
+        <h2>Estas cartas necesitan ser reveladas en esta deuda histórica que mantiene Chile con la escritora.</h2>
+        <h2>Descifra el contenido de estas cartas.</h2>
         <div class="homeBtn" id="showCipher"><button type="button">Comencemos</button>
         </div>  
-      </section>
-  
-      <section style="display: none;" id="cipher">
-        <h3>Aquí irán las instrucciones.</h3>
-        <div class="entryText"><textarea name="textarea" rows="10" cols="20" placeholder="Ingresa el texto a cifrar aquí (sin Ñ)"></textarea></div>
-        <br>
-        <div class="centerCipher">
-          <input id="offsetNumber"  type='number' min='1' max='26'></input>
-          <button type="button" class="cipherBtn" id="code">Cifrar</button>
-          <button type="button" class="cipherBtn" id="deCode">Descifrar</button>
+    </section>
+      
+    <section style="display: none;" id="cipher">
+      <div class="columnContainer">
+        <div class= "poemContainer">
+          <section id="menu1">
+            <a href="#menu1">Carta a Doris Dana, 1945.</a>
+            <p>EN CUANTO A TU MIEDO DE PERDERME, TU FALTA COMPLETA DE CONFIANZA, YO NO ME MEREZCO ESO, QUE ME DA UN POCO DE CÓLERA Y UN MUCHO DE TRISTEZA, CASI DE AMARGURA. YO NO SOY UNA SINVERGÜENZA, NO, MI AMOR, YO NO SOY ESO QUE TÚ IMAGINAS. SOY UNA DESGRACIADA SI TÚ SIGUES SIN TENER FE EN TU GABRIELA</p>
+          </section>
+      
+          <section id="menu2">
+            <a href="#menu2">Menu 2</a>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, aspernatur delectus soluta quibusdam et voluptatum, laborum perspiciatis natus nostrum alias quos cupiditate, necessitatibus autem ex. Animi fugiat veritatis dignissimos commodi?</p>
+          </section>
+        
+          <section id="menu3">
+            <a href="#menu3">Menu 3</a>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, aspernatur delectus soluta quibusdam et voluptatum, laborum perspiciatis natus nostrum alias quos cupiditate, necessitatibus autem ex. Animi fugiat veritatis dignissimos commodi?</p>
+          </section>
+        
+          <section id="menu4">
+            <a href="#menu4">Menu 4</a>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, aspernatur delectus soluta quibusdam et voluptatum, laborum perspiciatis natus nostrum alias quos cupiditate, necessitatibus autem ex. Animi fugiat veritatis dignissimos commodi?</p>
+          </section>
         </div>
-        <br>
-        <div class="entryText"><textarea name="textarea" rows="10" cols="20" placeholder="Acá estará tu mensaje crifrado."></textarea></div>
+        <div class="cipherContainer">
+          <h3>Aquí irán las instrucciones.</h3>
+          <div class="entryText"><textarea name="textarea" rows="10" cols="20" id="message" placeholder="Ingresa el texto a cifrar aquí (sin Ñ)"></textarea></div>
+          <br>
+          <div class="centerCipher">
+            <input id="displacement" type='number' min='1' max='26'></input>
+            <button type="button" class="cipherBtn" id="cifrar">Cifrar</button>
+            <button type="button" class="cipherBtn" id="descifrar">Descifrar</button>
+          </div>
+          <br>
+          <div class="entryText"><textarea name="textarea" id="outputMessage" rows="10" cols="20" placeholder="Acá estará tu mensaje crifrado."></textarea></div>
+        </div>
+      </div>
       </section>
-      </main>
   </div>
     <script src="index.js" type="module"></script>
   </body>
