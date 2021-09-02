@@ -1,16 +1,18 @@
+@font-face {
+    font-family: Typewritter;
+    src: url("fonts/JMH_Typewriter-Bold.ttf");
+}
+
 body {
     background-repeat: no-repeat;
     background-size:cover;
     background-image: url(img/background.png);
     background-position: center;
-    
 } 
 
 header {
     display:flex;
     justify-content: center;
-
-    
 }
 
 figure {
@@ -27,7 +29,6 @@ h1 {
     color: rgb(160,125,133);
     margin:0%;
     margin-top: 2%;
-    
 }
 
 .container {
@@ -39,15 +40,12 @@ h1 {
     margin: 2%;
 }
 
-p  {
+h2  {
     align-content: center;
     text-align: center;
     color: rgb(160,125,133);
-    /* border: solid;
-    border-color:rgba(160,125,133); */
     font-size: 24pt;
     margin: 3%;
-    
 }
 
 button {
@@ -66,14 +64,15 @@ button {
 }
 
 textarea {
-    width: 800px;
+    width: 400px;
     height: 200px;
     border-radius: 25px;
-    font-size: 18pt;
+    font-size: 10pt;
     padding: 1%;
     margin: 0%;
     text-align: justify;
     resize: none;
+    font-family: Typewritter;
 }
 .entryText {
     display: flex;
@@ -89,9 +88,57 @@ h3 {
     justify-content: center;
 }
 
+/* FIX THIS NONSENSE */
 .centerCipher {
     display: flex;
     justify-content: center;
 }
+/* END FIX THIS NONSENSE */
 
+/* TEST */
+#displacement{
+    font-size: 18pt;
+    text-align: center;
+}
 
+/* TEST COLUMNAS */
+.columnContainer {
+    margin: 0%;
+}
+
+.cipherContainer {
+    margin: 0%;
+    display: inline-block;
+}
+
+.poemContainer {
+    width: 500px;
+    box-shadow: 7px 13px 37px rgba(0, 0, 0, .5);
+    display: inline-block;
+}
+
+section p {
+    overflow: hidden;
+    max-height: 0;
+    text-align: justify;
+    font-family: "Courier New", Courier, monospace;
+    background: #e4e4e4;
+    transition: all 0.2s ease-in;
+    font-family: Typewritter;
+}
+
+section a {
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 10px;
+    font-family: "Courier New", Courier, monospace;
+    background-color: #212121;
+    border-bottom: 2px solid gray;
+    color: white;
+}
+
+section:target p {
+    max-height: 120px;
+    padding: 10px;
+}
