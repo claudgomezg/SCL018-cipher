@@ -3,7 +3,7 @@
     src: url("fonts/JMH_Typewriter-Bold.ttf");
 }
 
-body {
+body { 
     background-repeat: no-repeat;
     background-size:cover;
     background-image: url(img/background.png);
@@ -15,10 +15,10 @@ header {
     justify-content: center;
 }
 
-figure {
+#logo {
     display: flex;
     margin: 0%;
-    width: 100px;
+    width: 88px;
     height: 100px;
     
 }
@@ -33,19 +33,32 @@ h1 {
 
 .container {
     border-radius: 25px;
-    background-color: black;
-    opacity: 0.8;
+    background-color: rgb(0, 0, 0, .8);
+    /* opacity: 0.8; */
     padding: 15px;
     align-items: center;
     margin: 2%;
+    display: flex;
+    justify-content: space-around;
+
+}
+figcaption{
+    color: blanchedalmond;
+    font-family: Typewritter;
+    font-size:10pt;
 }
 
+#GabrielaPhoto {
+    width: 450px;
+    margin-top: 5%;
+}
 h2  {
     align-content: center;
     text-align: center;
     color: rgb(160,125,133);
-    font-size: 24pt;
+    font-size: 23pt;
     margin: 3%;
+    font-family: Typewritter;
 }
 
 button {
@@ -53,21 +66,23 @@ button {
     border-radius: 12px;
     border: 1px solid rgba(0, 0, 0, 0.4);
     color: #FAFAFA;
-    font-size: 24px;
+    font-size: 18px;
     height: 50px;
-    width: 180px;
+    width: 110px;
+    font-family: Typewritter;
 }
 
 .homeBtn {
     display: flex;
     justify-content: center;
+    margin-top:5%;
 }
 
 textarea {
     width: 400px;
     height: 200px;
     border-radius: 25px;
-    font-size: 10pt;
+    font-size: 12pt;
     padding: 1%;
     margin: 0%;
     text-align: justify;
@@ -97,24 +112,32 @@ h3 {
 
 /* TEST */
 #displacement{
-    font-size: 18pt;
+    font-size: 10pt;
     text-align: center;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 /* TEST COLUMNAS */
 .columnContainer {
-    margin: 0%;
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .cipherContainer {
-    margin: 0%;
     display: inline-block;
+    flex: 1;
+    /* Space between columns */
+    margin: 0 8px;
 }
 
 .poemContainer {
-    width: 500px;
+    /* width: 500px; */
     box-shadow: 7px 13px 37px rgba(0, 0, 0, .5);
     display: inline-block;
+    flex: 3;
+    margin: 0 8px;
 }
 
 section p {
@@ -141,4 +164,9 @@ section a {
 section:target p {
     max-height: 120px;
     padding: 10px;
+}
+
+.landingContainer{
+    display:flex
+
 }
