@@ -18,9 +18,8 @@ header {
 #logo {
     display: flex;
     margin: 0%;
-    width: 88px;
-    height: 100px;
-    
+    width: 90px;
+    height: 96px;
 }
 
 h1 {
@@ -28,7 +27,7 @@ h1 {
     font-size: 50pt;
     color: rgb(160,125,133);
     margin:0%;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 .container {
@@ -51,12 +50,13 @@ figcaption{
 #GabrielaPhoto {
     width: 450px;
     margin-top: 5%;
+    border-radius: 5%;
 }
 h2  {
     align-content: center;
     text-align: center;
     color: rgb(160,125,133);
-    font-size: 23pt;
+    font-size: 20pt;
     margin: 3%;
     font-family: Typewritter;
 }
@@ -128,8 +128,7 @@ h3 {
 .cipherContainer {
     display: inline-block;
     flex: 1;
-    /* Space between columns */
-    margin: 0 8px;
+    margin: 0 8px; /* Space between columns */
 }
 
 .poemContainer {
@@ -167,6 +166,5 @@ section:target p {
 }
 
 .landingContainer{
-    display:flex
-
+    display: flex;
 }
