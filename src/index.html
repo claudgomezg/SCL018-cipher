@@ -18,8 +18,8 @@
               <figcaption>Izquierda Doris Dana y derecha Gabriela Mistral en Nueva York 1954</figcaption>
               <div class="homeBtn" id="showCipher"><button type="button">Comenzar</button></div> 
             </figure>
-              
             <div class="firstTextContainer">
+              <br><br>
               <h2>Hasta hace unos años se reveló la correspondencia que mantenía la poetisa con su asistente Doris Dana.</h2> 
               <h2>Estas cartas necesitan ser reveladas en esta deuda histórica que mantiene Chile con la escritora.</h2>
               <h2>Descifra el contenido de estas cartas.</h2>
@@ -36,27 +36,42 @@
           </section>
       
           <section id="menu2">
-            <a href="#menu2">Carta a Doris Dana, 1945.</a>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, aspernatur delectus soluta quibusdam et voluptatum, laborum perspiciatis natus nostrum alias quos cupiditate, necessitatibus autem ex. Animi fugiat veritatis dignissimos commodi?</p>
+            <a href="#menu2" id="copy-text-btn">22 de abril de 1949, cifrado 5.</a>
+            <p id="poem1">Tú no me conoces todavía bien, mi amor. Tú ignoras la profundidad de mi vínculo contigo.
+              Dame tiempo, dámelo, para hacerte un poco feliz. Tenme paciencia,
+              espera a ver y a oír lo que tú eres para mí.
+            </p>
           </section>
         
           <section id="menu3">
-            <a href="#menu3">Menu 3</a>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, aspernatur delectus soluta quibusdam et voluptatum, laborum perspiciatis natus nostrum alias quos cupiditate, necessitatibus autem ex. Animi fugiat veritatis dignissimos commodi?</p>
+            <a href="#menu3" id="copy-text-btn2">21 de abril de 1949, cifrado 4.</a>
+            <p id="poem2">Veo el cielo, recuerdo millones de cielos sobre la cabeza
+              más querida en el mundo. Y pienso «este mismo cielo toca a la
+              cabeza de mi querida», y yo mando a ti un beso, un toque tierno y
+              pasionado por los nubes que pasan, que tal vez van a verte pronto en
+              [...]. Y tengo celos de estos nubes que pueden verte más pronto que
+              yo. Y el viento -el viento me abraza- y yo ruego al viento «abraza
+              a ella para mí, haga que ella que es mi abrazo, tierno, y pasionado».
+              Yo me pongo en el viento y en la lluvia tierna, para que estos, viento
+              y lluvia, pueden abrazarte y besarte para mí.
+            </p>
           </section>
         
           <section id="menu4">
-            <a href="#menu4">Menu 4</a>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, aspernatur delectus soluta quibusdam et voluptatum, laborum perspiciatis natus nostrum alias quos cupiditate, necessitatibus autem ex. Animi fugiat veritatis dignissimos commodi?</p>
+            <a href="#menu4" id="copy-text-btn3">24 de noviembre de 1949, cifrado 2.
+              </a>
+            <p id="poem3">Procuro cuidarme de ti. Yo no tengo razón de vivir. Cuando llegaste, yo no tenía nada, parecía desnuda,
+              la pobreza pura y el tedio y una viva repugnancia de vivir.
+              Todo lo has mudado tú y espero que lo hayas visto. [...] Un abrazo tierno, Gabriela.
+            </p>
           </section>
         </div>
         <div class="cipherContainer">
           <div class="entryText"><textarea name="textarea" rows="10" cols="20" id="message" placeholder="Ingresa el texto a cifrar aquí"></textarea></div>
           <br>
           <div class="centerCipher">
-          
             <button type="button" class="cipherBtn" id="encodeButton">Cifrar</button>
-            <input id="displacement" type='number' min='1' max='26'></input>
+            <input type='number' min='1' max='26' placeholder="0" id="offset"></input>
             <button type="button" class="cipherBtn" id="decodeButton">Descifrar</button>
           </div>
           <br>
