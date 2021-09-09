@@ -47,11 +47,13 @@ figcaption{
     font-size:10pt;
 }
 
-#GabrielaPhoto {
+#DorisGabriela {
     width: 450px;
+    height: 310px;
     margin-top: 5%;
     border-radius: 5%;
 }
+
 h2  {
     align-content: center;
     text-align: center;
@@ -62,7 +64,7 @@ h2  {
 }
 
 button {
-    background: rgb(160,125,133);
+    background: rgb(160,125,133, 0.6);
     border-radius: 12px;
     border: 1px solid rgba(0, 0, 0, 0.4);
     color: #FAFAFA;
@@ -70,6 +72,11 @@ button {
     height: 50px;
     width: 110px;
     font-family: Typewritter;
+}
+
+button:hover{
+    background-color: rgba(160, 125, 133);
+    transition: ease 0.2s;
 }
 
 .homeBtn {
@@ -83,17 +90,17 @@ textarea {
     height: 200px;
     border-radius: 25px;
     font-size: 12pt;
-    padding: 1%;
+    padding: 6%;
     margin: 0%;
     text-align: justify;
     resize: none;
     font-family: Typewritter;
+    background-image: url(img/letterBackground2.PNG);
 }
 .entryText {
     display: flex;
     justify-content: center;
     margin-right: 0;
-
 }
 
 h3 {
@@ -137,6 +144,7 @@ h3 {
     display: inline-block;
     flex: 3;
     margin: 0 8px;
+    
 }
 
 section p {
@@ -144,9 +152,10 @@ section p {
     max-height: 0;
     text-align: justify;
     font-family: "Courier New", Courier, monospace;
-    background: #e4e4e4;
+    /* background: #e4e4e4; */
     transition: all 0.2s ease-in;
     font-family: Typewritter;
+    background-image: url(img/letterBackground2.PNG);
 }
 
 section a {
@@ -167,4 +176,35 @@ section:target p {
 
 .landingContainer{
     display: flex;
+}
+
+#displacement {
+    font-family: Typewritter;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 4%;
+    margin-right: 4%;
+    background-image: url(img/letterBackground2.PNG);
+    border-radius: 25%;
+}
+
+#youtubeDocumental {
+    margin-top: 0%;
+    border-radius: 5%;
+    display: flex;
+    margin-left: 3%;
+}
+
+::placeholder {
+    color:rgba(0, 0, 0, 0.65);
+}
+
+#arrow {
+    width: 50px;
+    height: 50px;
+}
+
+.eraseBtn button {
+    display: flex;
+    justify-content: center;
 }

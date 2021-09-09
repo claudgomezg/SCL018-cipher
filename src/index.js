@@ -10,68 +10,14 @@ const toCipher = document.getElementById("showCipher");
     secondPage.style.display = "block";
 });
 
+const imageLanding = document.getElementById("GabrielaPhoto");
+const youtubeLink = document.getElementById("youtubeDocumental");
 
-// test function
-
-
-
-
-
-// function inicio(){
-//     document.getElementById("message").addEventListener("keyup", function(){
-//         this.value = this.value.toUpperCase();
-//     }, true);
-    
-//     document.getElementById("cifrar").addEventListener("click",function(){  
-//         let text = document.getElementById("message").value;
-//         let displacement = document.getElementById("displacement").value;               
-//         document.getElementById("outputMessage").value = cifrar2(text, displacement);
-//     },true);
-//     document.getElementById("descifrar").addEventListener("click",function(){  
-//         let text = document.getElementById("message").value;
-//         let displacement = document.getElementById("displacement").value;                               
-//         document.getElementById("outputMessage").value = descifrar(text, displacement);
-//     },true);
-// }
-
-// function cifrar(text, displacement) {
-//     if (!text) 
-//         return ''; 
-//     const letras = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-//     displacement = (displacement % 26 + 26) % 26; 
-//     return text.replace(/[A-Z]/ig, c => letras[(letras.indexOf(c) + displacement) % 26]);
-// }
-
-// function descifrar(text, displacement) {
-//     if (!text) 
-//         return ''; 
-//     const letras = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-//     displacement = (displacement% 26 - 26) % 26; 
-//     return text.replace(/[A-Z]/ig, c => letras[(letras.indexOf(c) - displacement) % 26]);
-// }
-
-// function cifrar2(text, displacement) {
-//     let resultado='';
-//     let letras = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-//     displacement = (displacement % 26 + 26) % 26; 
-    
-//     if (text){
-//         for (let i=0; i<text.length; ++i){
-//             //Si la letra está en el array de letras (es un símbolo, un espacio...)
-//             if (letras.indexOf(text[i])!=-1)
-//             { 
-//                 //almacenamos en c la posición de la letra más el desplazamiento y le aplicamos el módulo
-//                 let posicion=((letras.indexOf(text[i])+displacement) % 26);
-//                 resultado+=letras[posicion];
-//             }
-//             else
-//                 resultado+=text[i]; // Números, espacios, símbolos... 
-//         }
-//     }
-//     return resultado;
-// }
-
-// END test function
+const toYoutube = document.getElementById("GabrielaPhoto");
+    toYoutube.addEventListener("click", () => {
+        imageLanding.style.display = "none";
+        youtubeLink.style.display = "block";
+    });
 
 // TEST FUNCION COPY TEXT
 function copyText(htmlElement){
@@ -90,18 +36,62 @@ function copyText(htmlElement){
 document.querySelector('#copy-text-btn').onclick =
 function()
 {
-copyText(document.querySelector('#poem1'));
-    alert("poema copiado")
+copyText(document.querySelector('#letter1'));
+    alert("Texto copiado")
 }
 document.querySelector('#copy-text-btn2').onclick =
 function()
 {
-copyText(document.querySelector('#poem2'));
-    alert("poema copiado")
+copyText(document.querySelector('#letter2'));
+    alert("Texto copiado")
 }
 document.querySelector('#copy-text-btn3').onclick =
 function()
 {
-copyText(document.querySelector('#poem3'));
-    alert("poema copiado")
+copyText(document.querySelector('#letter3'));
+    alert("Texto copiado")
 }
+document.querySelector('#copy-text-btn4').onclick =
+function()
+{
+copyText(document.querySelector('#letter4'));
+    alert("Texto copiado")
+}
+
+
+const goBack = document.getElementById("arrow");
+goBack.addEventListener("click", () => {
+    secondPage.style.display = "none";
+    firstPage.style.display = "block";
+})
+
+//variables para llamar a los botones cifrar y descifrar
+const encondeBtn = document.getElementById("encodeButton");
+const decodeBtn = document.getElementById("decodeButton");
+//variable para llamar al input númerico
+const offsetNumber = document.getElementById("displacement");
+//variables para llamar a los textarea de ingreso y retorno
+const textAreaIn = document.getElementById("message");
+const textOut = document.getElementById("outputMessage");
+
+encondeBtn.addEventListener("click", () =>{
+    const offset = offsetNumber.value;
+    const textIn = textAreaIn.value;
+    textOut.value = cipher.encode(offset, textIn);
+});
+
+decodeBtn.addEventListener("click", () => {
+    const offset = offsetNumber.value;
+    const textIn = textAreaIn.value;
+    textOut.value = cipher.decode(offset, textIn);
+});
+
+const eraseBtn = document.getElementById("eraseButton");
+
+eraseBtn.addEventListener("click", () => {
+    document.getElementById("displacement").value = 0;
+    document.getElementById("message").value = "";
+    document.getElementById("outputMessage").value = "";
+});
+
+import cipher from './cipher.js';

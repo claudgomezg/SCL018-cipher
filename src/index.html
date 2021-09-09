@@ -9,73 +9,112 @@
   <div class="container">
     <section id='home'>
       <header>
-          <img id="logo" src="img/logoGabriela.png">  
+        <img id="logo" src="img/logoGabriela.png">  
         <h1>abriela Mistral</h1>
       </header>
       <main>
           <div class="landingContainer">
-            <figure> <img src="img/imgLanding.png" id= "GabrielaPhoto">
-              <figcaption>Izquierda Doris Dana y derecha Gabriela Mistral en Nueva York 1954</figcaption>
-              <div class="homeBtn" id="showCipher"><button type="button">Comenzar</button></div> 
+            <section id="GabrielaPhoto">
+            <figure> 
+              <img src="img/imgLanding.png" id="DorisGabriela">
             </figure>
+            <figcaption>Doris Dana (izquierda) y Gabriela Mistral (derecha). 
+              Nueva York, 1954. <br>
+              Pulsa la imagen para escuchar una pequeña conversación entre ellas.
+            </figcaption>
+          </section>
+
+          <section style="display: none;" id="youtubeDocumental">
+            <video width="450" height="350" controls muted>
+              <source src="video/Fragmento-Gabriela-Doris.mp4" type="video/mp4">
+            </video>
+          </section>
+            
             <div class="firstTextContainer">
               <br><br>
               <h2>Hasta hace unos años se reveló la correspondencia que mantenía la poetisa con su asistente Doris Dana.</h2> 
               <h2>Estas cartas necesitan ser reveladas en esta deuda histórica que mantiene Chile con la escritora.</h2>
               <h2>Descifra el contenido de estas cartas.</h2>
+              <div class="homeBtn" id="showCipher"><button type="button">Comenzar</button></div> 
             </div>
           </div>
     </section>
       
     <section style="display: none;" id="cipher">
+      <box-icon><img src="img/arrow.png" id="arrow"></box-icon>
       <div class="columnContainer">
         <div class= "poemContainer">
           <section id="menu1">
             <a href="#menu1">Instrucciones</a>
-            <P>Lorem, ipsum.</P>
+            <p>Haz click en una de las cartas, automáticamente el contenido de esta será copiada
+              a tu portapapeles.
+              <br>
+              Pega la carta en la primera caja al costado derecho de tu pantalla.
+              <br>
+              Selecciona el cifrado que te indican en cada una de las cartas en el pequeño recuadro numérico 
+              (en el caso de la primera carta, el cifrado sería "20").
+              <br>
+              Por último, haz click en el botón "descifrar" y podrás leer la carta.
+              <br>
+              ¡También podrás cifrar y descifrar tus propias cartas o mensajes ocultos!
+            </p>
           </section>
       
           <section id="menu2">
-            <a href="#menu2" id="copy-text-btn">22 de abril de 1949, cifrado 5.</a>
-            <p id="poem1">Tú no me conoces todavía bien, mi amor. Tú ignoras la profundidad de mi vínculo contigo.
-              Dame tiempo, dámelo, para hacerte un poco feliz. Tenme paciencia,
-              espera a ver y a oír lo que tú eres para mí.
+            <a href="#menu2" id="copy-text-btn">9 de abril de 1949, cifrado 20.
+              </a>
+            <p id="letter1">Si uwuvi xy iíl no pit: ¡Ny fi ualuxywí nuhni! 
+              Xymxy koy ny zocmny si hi líi s my gy uwogofu yh fu muhaly hi mé koé gunylcu xyhmu s imwolu. 
+              Si hi lywcví wigi gc julny ohu gyfuhwifíu wihmnuhny xy fu wouf gy buh bywbi mufcl mifugyhny fim hcñim, fu gúmcwu s nú. 
+              S nú lywcvcmny wigi julny ohu luwcóh xy ufyalíu, nugvcéh wihmnuhny, 
+              jyli, uxygám lywcvcmny fu aluwcu xy xulfu s xy gynylfu xy jywbi uxyhnli bumnu yh fim mylym gám áwcxim.
             </p>
           </section>
         
           <section id="menu3">
             <a href="#menu3" id="copy-text-btn2">21 de abril de 1949, cifrado 4.</a>
-            <p id="poem2">Veo el cielo, recuerdo millones de cielos sobre la cabeza
-              más querida en el mundo. Y pienso «este mismo cielo toca a la
-              cabeza de mi querida», y yo mando a ti un beso, un toque tierno y
-              pasionado por los nubes que pasan, que tal vez van a verte pronto en
-              [...]. Y tengo celos de estos nubes que pueden verte más pronto que
-              yo. Y el viento -el viento me abraza- y yo ruego al viento «abraza
-              a ella para mí, haga que ella que es mi abrazo, tierno, y pasionado».
-              Yo me pongo en el viento y en la lluvia tierna, para que estos, viento
-              y lluvia, pueden abrazarte y besarte para mí.
+            <p id="letter2">Zis ip gmips, vigyivhs qmppsriw hi gmipsw wsfvi pe gefide qáw uyivmhe ir ip qyrhs. 
+              C tmirws «iwxi qmwqs gmips xsge e pe gefide hi qm uyivmhe», c cs qerhs e xm yr fiws, 
+              yr xsuyi xmivrs c etewmsrehs tsv psw ryfiw uyi tewer, uyi xep zid zer e zivxi tvsrxs. 
+              C xirks gipsw hi iwxsw ryfiw uyi tyihir zivxi qáw tvsrxs uyi cs. 
+              C ip zmirxs -ip zmirxs qi efvede- c cs vyiks ep zmirxs «efvede e ippe teve qí, 
+              leke uyi ippe uyi iw qm efveds, xmivrs, c etewmsrehs». 
+              Cs qi tsrks ir ip zmirxs c ir pe ppyzme xmivre, teve uyi iwxsw, zmirxs c ppyzme, 
+              tyihir efvedevxi c fiwevxi teve qí.
             </p>
           </section>
-        
+
           <section id="menu4">
-            <a href="#menu4" id="copy-text-btn3">24 de noviembre de 1949, cifrado 2.
-              </a>
-            <p id="poem3">Procuro cuidarme de ti. Yo no tengo razón de vivir. Cuando llegaste, yo no tenía nada, parecía desnuda,
-              la pobreza pura y el tedio y una viva repugnancia de vivir.
-              Todo lo has mudado tú y espero que lo hayas visto. [...] Un abrazo tierno, Gabriela.
+            <a href="#menu4" id="copy-text-btn3">22 de abril de 1949, cifrado 5.</a>
+            <p id="letter3">Yú st rj htsthjx ytifaíf gnjs, rn frtw. 
+              Yú nlstwfx qf uwtkzsinifi ij rn aíshzqt htsynlt. 
+              Ifrj ynjrut, iárjqt, ufwf mfhjwyj zs utht kjqne. 
+              Yjsrj ufhnjshnf, jxujwf f ajw d f tíw qt vzj yú jwjx ufwf rí.
             </p>
           </section>
+
+          <section id="menu5">
+            <a href="#menu5" id="copy-text-btn4">24 de noviembre de 1949, cifrado 2.
+              </a>
+            <p id="letter4">Rtqewtq ewkfctog fg vk. Aq pq vgpiq tcbóp fg xkxkt. 
+              Ewcpfq nngicuvg, aq pq vgpíc pcfc, rctgeíc fgupwfc, 
+              nc rqdtgbc rwtc a gn vgfkq a wpc xkxc tgrwipcpekc fg xkxkt. 
+              Vqfq nq jcu owfcfq vú a gurgtq swg nq jcacu xkuvq.Wp cdtcbq vkgtpq, Icdtkgnc.
+            </p>
+          </section>
+
         </div>
         <div class="cipherContainer">
           <div class="entryText"><textarea name="textarea" rows="10" cols="20" id="message" placeholder="Ingresa el texto a cifrar aquí"></textarea></div>
           <br>
           <div class="centerCipher">
             <button type="button" class="cipherBtn" id="encodeButton">Cifrar</button>
-            <input type='number' min='1' max='26' placeholder="0" id="offset"></input>
+            <input type='number' min='1' max='26' placeholder="0" id="displacement"></input>
             <button type="button" class="cipherBtn" id="decodeButton">Descifrar</button>
           </div>
           <br>
-          <div class="entryText"><textarea name="textarea" id="outputMessage" rows="10" cols="20" readonly="readonly" placeholder="Acá estará tu mensaje crifrado."></textarea></div>
+          <div class="entryText"><textarea name="textarea" id="outputMessage" rows="10" cols="20" readonly="readonly" placeholder="Acá estará tu mensaje cifrado."></textarea></div>
+          <button type="button" class="eraseBtn" id="eraseButton">Limpiar</button>
         </div>
       </div>
       </section>
