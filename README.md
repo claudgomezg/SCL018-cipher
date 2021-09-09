@@ -1,7 +1,7 @@
 <details>
 <summary>Readme Laboratoria</summary>
 
-# Cifrado César
+## Cifrado César
 
 ## Índice
 
@@ -444,7 +444,8 @@ de las usuarias.
 
 <details>
 <summary>Readme WebApp Gabriela Mistral</summary>
-# Cifrado César
+
+## Cifrado César
 
 ## Índice
 
@@ -471,7 +472,7 @@ Como dupla, decidimos que le queríamos dar un concepto más profundo a la temá
 ## 3. Prototipo
 
 En primera instancia, ideamos un landing que tuviera como temática un homenaje a Gabriela Mistral y Doris Dana.
-Sin embargo, al recibir feedback de las coach y de las compañeras de Laboratoria, fuimos refinando nuestros prototipos disminuyendo la cantidad de texto, ya que parecía más una página de bigrafía mas que una página para revelar un cifrado.
+Sin embargo, al recibir feedback de las coach y de las compañeras de Laboratoria, fuimos refinando nuestros prototipos disminuyendo la cantidad de texto, ya que parecía más una página biográfica más que una página para revelar un cifrado.
 
 *Prototipo Landing*
 <br>
@@ -486,11 +487,11 @@ Nuestra segunda ventana, en donde debían ir los inputs para cifrar y descifrar 
 ## 4. Planificación
 
 Respecto a la planificación de nuestros sprints, dividimos la carga de trabajo en 3 sprints.
-En el sprint 1, tuvimos como objetivo crear los prototipos en Figma y crear un esqueleto en HTML.
+En el sprint 1, tuvimos como objetivo crear los prototipos en Figma y crear un esqueleto en HTML/CSS.
 En el sprint 2, tuvimos como objetivo crear la ventana de cifrado e implementar funciones en Javascript.
 En el sprint 3,  tuvimos como objetivo terminar las funciones de Javascript, realizar la hacker edition y afinar detalles de nuestro archivo CSS.
 
-A continuación, podrán consultar nuestro tablero en Trello en donde pudimos organizar las  tareas semanales:
+A continuación, podrán consultar nuestro tablero en Trello en donde pudimos organizar las tareas semanales:
 
 https://trello.com/b/bwZY2Uhn/caesar-cipher
 

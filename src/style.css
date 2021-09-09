@@ -42,9 +42,10 @@ h1 {
 
 }
 figcaption{
-    color: blanchedalmond;
+    color: rgb(242,237,220);
     font-family: Typewritter;
-    font-size:10pt;
+    font-size:9pt;
+    margin-left: 8%;
 }
 
 #DorisGabriela {
@@ -56,9 +57,9 @@ figcaption{
 
 h2  {
     align-content: center;
-    text-align: center;
-    color: rgb(160,125,133);
-    font-size: 20pt;
+    justify-content: center;
+    color: rgb(242,237,220);
+    font-size: 17pt;
     margin: 3%;
     font-family: Typewritter;
 }
@@ -67,7 +68,7 @@ button {
     background: rgb(160,125,133, 0.6);
     border-radius: 12px;
     border: 1px solid rgba(0, 0, 0, 0.4);
-    color: #FAFAFA;
+    color: rgb(242,237,220);
     font-size: 18px;
     height: 50px;
     width: 110px;
@@ -117,7 +118,7 @@ h3 {
 }
 /* END FIX THIS NONSENSE */
 
-/* TEST */
+
 #displacement{
     font-size: 10pt;
     text-align: center;
@@ -125,7 +126,7 @@ h3 {
     margin-right: 4%;
 }
 
-/* TEST COLUMNAS */
+
 .columnContainer {
     margin: 2%;
     display: flex;
@@ -135,11 +136,10 @@ h3 {
 .cipherContainer {
     display: inline-block;
     flex: 1;
-    margin: 0 8px; /* Space between columns */
+    margin: 0 8px; 
 }
 
 .poemContainer {
-    /* width: 500px; */
     box-shadow: 7px 13px 37px rgba(0, 0, 0, .5);
     display: inline-block;
     flex: 3;
@@ -195,6 +195,10 @@ section:target p {
     margin-left: 3%;
 }
 
+video {
+    width: 487px;
+    height: 400px;
+}
 ::placeholder {
     color:rgba(0, 0, 0, 0.65);
 }
@@ -204,7 +208,10 @@ section:target p {
     height: 50px;
 }
 
-.eraseBtn button {
+.eraseBtn {
     display: flex;
     justify-content: center;
+    margin: auto;
+    margin-top: 5%;
+    align-items: center
 }
