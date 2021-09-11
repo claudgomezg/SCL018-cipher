@@ -28,6 +28,15 @@ h1 {
     color: rgb(160,125,133);
     margin:0%;
     margin-top: 1%;
+    /* TEST BACKGROUND TITULO */
+    background-image: url(img/logoBG.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-filter: contrast(80%);
+    filter: contrast(80%);
+    /* END TEST BACKGROUND TITULO */
 }
 
 .container {
@@ -39,11 +48,11 @@ h1 {
     margin: 2%;
     display: flex;
     justify-content: space-around;
-
 }
+
 figcaption{
     color: rgb(242,237,220);
-    font-family: Typewritter;
+    /* font-family: Typewritter; */
     font-size:9pt;
     margin-left: 8%;
 }
@@ -59,9 +68,10 @@ h2  {
     align-content: center;
     justify-content: center;
     color: rgb(242,237,220);
-    font-size: 17pt;
+    font-size: 20pt;
     margin: 3%;
-    font-family: Typewritter;
+    margin-top: 8%;
+    /* font-family: Typewritter; */
 }
 
 button {
@@ -83,7 +93,7 @@ button:hover{
 .homeBtn {
     display: flex;
     justify-content: center;
-    margin-top:5%;
+    margin-top: 10%;
 }
 
 textarea {
@@ -126,17 +136,18 @@ h3 {
     margin-right: 4%;
 }
 
-
 .columnContainer {
     margin: 2%;
     display: flex;
     justify-content: space-between;
+    border-collapse: separate
 }
 
 .cipherContainer {
     display: inline-block;
     flex: 1;
     margin: 0 8px; 
+    border-collapse: separate
 }
 
 .poemContainer {
@@ -170,8 +181,9 @@ section a {
 }
 
 section:target p {
-    max-height: 120px;
+    max-height: 300px;
     padding: 10px;
+    overflow: auto;
 }
 
 .landingContainer{
@@ -214,4 +226,46 @@ video {
     margin: auto;
     margin-top: 5%;
     align-items: center
+}
+
+@media (max-width: 800px){
+    .container {
+        flex-direction: column;
+        margin: auto;
+    }
+    .landingContainer {
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    .cipherContainer{
+        flex-direction: column;
+        margin: auto;
+    }
+    .columnContainer{
+        flex-direction: column;
+        margin: auto;
+    }
+    h1 {
+        font-size: 50px;
+        text-justify: distribute;
+        margin-top: 7%;
+    }
+    h2 {
+        font-size: 18px;
+        text-justify: distribute;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    video {
+        flex-direction: column;
+        width: 390px;
+        height: 300px;
+        margin: auto;
+    }
+    #DorisGabriela {
+        width: 350px;
+        height: 230px;
+        size: auto;
+    }
 }
