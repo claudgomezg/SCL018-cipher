@@ -10,16 +10,18 @@ const toCipher = document.getElementById("showCipher");
     secondPage.style.display = "block";
 });
 
+//declaración de variables para la sección de foto y video
 const imageLanding = document.getElementById("GabrielaPhoto");
 const youtubeLink = document.getElementById("youtubeDocumental");
 
+//función para mostrar video al presionar la foto en el landing
 const toYoutube = document.getElementById("GabrielaPhoto");
     toYoutube.addEventListener("click", () => {
         imageLanding.style.display = "none";
         youtubeLink.style.display = "block";
     });
 
-// TEST FUNCION COPY TEXT
+// Función copiar texto
 function copyText(htmlElement){
     if(!htmlElement){
         return;
@@ -32,7 +34,7 @@ function copyText(htmlElement){
     document.execCommand('copy');
     inputElement.parentElement.removeChild(inputElement);
 }
-
+//query selector para copiar el contenido del acordeón
 document.querySelector('#copy-text-btn').onclick =
 function()
 {
@@ -57,8 +59,14 @@ function()
 copyText(document.querySelector('#letter4'));
     alert("Texto copiado")
 }
+document.querySelector('#copy-text-btn5').onclick =
+function()
+{
+copyText(document.querySelector('#letter5'));
+    alert("Texto copiado")
+}
 
-
+// Función botón atrás
 const goBack = document.getElementById("arrow");
 goBack.addEventListener("click", () => {
     secondPage.style.display = "none";
@@ -74,18 +82,21 @@ const offsetNumber = document.getElementById("displacement");
 const textAreaIn = document.getElementById("message");
 const textOut = document.getElementById("outputMessage");
 
+//Listener botón encode
 encondeBtn.addEventListener("click", () =>{
     const offset = offsetNumber.value;
     const textIn = textAreaIn.value;
     textOut.value = cipher.encode(offset, textIn);
 });
 
+//Listener botón decode
 decodeBtn.addEventListener("click", () => {
     const offset = offsetNumber.value;
     const textIn = textAreaIn.value;
     textOut.value = cipher.decode(offset, textIn);
 });
 
+//Función botón borrar
 const eraseBtn = document.getElementById("eraseButton");
 
 eraseBtn.addEventListener("click", () => {
@@ -94,4 +105,5 @@ eraseBtn.addEventListener("click", () => {
     document.getElementById("outputMessage").value = "";
 });
 
+// importación hoja cipher
 import cipher from './cipher.js';
