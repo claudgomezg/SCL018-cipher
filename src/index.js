@@ -16,6 +16,7 @@ const youtubeLink = document.getElementById("youtubeDocumental");
 
 //función para mostrar video al presionar la foto en el landing
 const toYoutube = document.getElementById("GabrielaPhoto");
+
     toYoutube.addEventListener("click", () => {
         imageLanding.style.display = "none";
         youtubeLink.style.display = "block";
@@ -76,23 +77,21 @@ goBack.addEventListener("click", () => {
 //variables para llamar a los botones cifrar y descifrar
 const encondeBtn = document.getElementById("encodeButton");
 const decodeBtn = document.getElementById("decodeButton");
-//variable para llamar al input númerico
-const offsetNumber = document.getElementById("displacement");
-//variables para llamar a los textarea de ingreso y retorno
-const textAreaIn = document.getElementById("message");
+
+//variable para llamar al textArea de salida
 const textOut = document.getElementById("outputMessage");
 
 //Listener botón encode
 encondeBtn.addEventListener("click", () =>{
-    const offset = offsetNumber.value;
-    const textIn = textAreaIn.value;
+    const offset = document.getElementById("displacement").value;
+    const textIn = document.getElementById("message").value;
     textOut.value = cipher.encode(offset, textIn);
 });
 
 //Listener botón decode
 decodeBtn.addEventListener("click", () => {
-    const offset = offsetNumber.value;
-    const textIn = textAreaIn.value;
+    const offset = document.getElementById("displacement").value;
+    const textIn = document.getElementById("message").value;
     textOut.value = cipher.decode(offset, textIn);
 });
 

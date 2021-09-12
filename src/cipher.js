@@ -14,11 +14,13 @@ es menor o igual que 90 es true entonces se aplica la formula para cifrar en may
         let capitalLetters = (asciiNumber - 65 + parseInt(offset)) % 26 + 65;
         encodeText += String.fromCharCode(capitalLetters);
     }
-//lo mismo pero para minusculas
+    
+// lo mismo pero para minusculas
     else if (asciiNumber >= 97 && asciiNumber <=122) {
         let lowerLetters = (asciiNumber - 97 + parseInt(offset)) % 26 + 97;
         encodeText += String.fromCharCode(lowerLetters);
         }
+
 //cualquier otro caso se dejara igual 
     else {
         encodeText += textIn[i]
@@ -32,19 +34,19 @@ decode: (offset, textIn) => {
         throw new TypeError();
         }
     let decodeText = ""; 
-    for (let i = 0; i <textIn.length; i++) {
+    for (let i = 0; i < textIn.length; i++) {
         let asciiNumber = textIn.charCodeAt(i);
-    //   if (offset == "") {
-    //       decodeText += ""
-    //   }
+
     if (asciiNumber >= 65 && asciiNumber <= 90) {
         let capitalLetters = (asciiNumber - 90 - parseInt(offset)) % 26 + 90;
         decodeText += String.fromCharCode(capitalLetters);
     }
+
     else if (asciiNumber >= 97 && asciiNumber <= 122) {
         let lowerLetters = (asciiNumber - 122 - parseInt(offset)) % 26 + 122;
         decodeText += String.fromCharCode(lowerLetters);
     }
+
     else { 
         decodeText += textIn[i];
     } 
