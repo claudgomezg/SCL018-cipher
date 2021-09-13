@@ -1,19 +1,18 @@
 <details>
 <summary>Readme Laboratoria</summary>
-  
-# Cifrado César
+
+## Cifrado César
 
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
+* [3. Criterios de aceptación mínimos del proyecto](#3-criterios-de-aceptación-mínimos-del-proyecto)
+* [4. Criterios de aceptación adicionales](#4-criterios-de-aceptación-adicionales)
+* [5. Objetivos de aprendizaje](#5-objetivos-de-aprendizaje)
+* [6. Recomendaciones generales](#6-recomendaciones-generales)
+* [7. Recursos y temas relacionados](#7-recursos-y-temas-relacionados)
+* [8. Checklist](#8-checklist)
 
 ***
 
@@ -31,7 +30,7 @@ un tipo de cifrado por sustitución, es decir que cada letra del texto original
 es reemplazada por otra que se encuentra un número fijo de posiciones
 (desplazamiento) más adelante en el mismo alfabeto.
 
-Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
+Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones en el alfabeto:
 
 * La letra A se cifra como D.
 * La palabra CASA se cifra como FDVD.
@@ -40,228 +39,124 @@ Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
 
 En la actualidad, todos los cifrados de sustitución simple se descifran con
 mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la
-comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas
+comunicación por sí mismos, el cifrado César sí puede formar parte de sistemas
 más complejos de codificación, como el cifrado Vigenère, e incluso tiene
 aplicación en el sistema ROT13.
 
 ## 2. Resumen del proyecto
 
-¿Qué tengo que hacer exactamente? En este proyecto crearás una aplicación
-web que servirá para que el usuario pueda cifrar y descifrar un texto indicando
-un desplazamiento específico de caracteres (_offset_).
+**¿Qué tengo que hacer exactamente?** En este proyecto crearás una aplicación
+_web_ que servirá para que tus usuarias puedan cifrar y descifrar un texto
+indicando un desplazamiento específico de caracteres (_offset_). Por ejemplo,
+cifrar **MICASA** con un desplazamiento de 3 caracteres de manera que el mensaje
+cifrado sería **PLFDVD**
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría cifrar un mensaje y pensar en cómo debe ser esa experiencia de uso
+La temática es libre. Piensa en qué situaciones de la vida real se
+necesitaría cifrar un mensaje y piensa en cómo debe ser esa experiencia de uso
 (qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc. Algunas ideas de
 ejemplo:
 
-* Crear claves seguras para el email.
-* Encriptar/cifrar una tarjeta de crédito.
+* Crear claves seguras.
 * Herramienta de mensajería interna de una organización de derechos humanos en
   una zona de conflicto.
 * Mensajería secreta para parejas.
 
-Trabajando en parejas aprenderán a construir una aplicación web que interactuará
-con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript
-como tecnologías.
-
-## 3. Objetivos de aprendizaje
-
-Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
-
-### HTML
-
-- [ ] **Uso de HTML semántico**
-
-  <details><summary>Links</summary><p>
-
-  * [HTML semántico](https://curriculum.laboratoria.la/es/topics/html/02-html5/02-semantic-html)
-  * [Semantics - MDN Web Docs Glossary](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-</p></details>
-
-### CSS
-
-- [ ] **Uso de selectores de CSS**
-
-  <details><summary>Links</summary><p>
-
-  * [Intro a CSS](https://curriculum.laboratoria.la/es/topics/css/01-css/01-intro-css)
-  * [CSS Selectors - MDN](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors)
-</p></details>
-
-- [ ] **Modelo de caja (box model): borde, margen, padding**
-
-  <details><summary>Links</summary><p>
-
-  * [Box Model & Display](https://curriculum.laboratoria.la/es/topics/css/01-css/02-boxmodel-and-display)
-  * [The box model - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
-  * [Introduction to the CSS box model - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
-  * [CSS display - MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/display)
-  * [display - CSS Tricks](https://css-tricks.com/almanac/properties/d/display/)
-</p></details>
-
-### Web APIs
-
-- [ ] **Uso de selectores del DOM**
-
-  <details><summary>Links</summary><p>
-
-  * [Manipulación del DOM](https://curriculum.laboratoria.la/es/topics/browser/02-dom/03-1-dom-methods-selection)
-  * [Introducción al DOM - MDN](https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction)
-  * [Localizando elementos DOM usando selectores - MDN](https://developer.mozilla.org/es/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
-</p></details>
-
-- [ ] **Manejo de eventos del DOM (listeners, propagación, delegación)**
-
-  <details><summary>Links</summary><p>
-
-  * [Introducción a eventos - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Events)
-  * [EventTarget.addEventListener() - MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
-  * [EventTarget.removeEventListener() - MDN](https://developer.mozilla.org/es/docs/Web/API/EventTarget/removeEventListener)
-  * [El objeto Event](https://developer.mozilla.org/es/docs/Web/API/Event)
-</p></details>
-
-- [ ] **Manipulación dinámica del DOM**
-
-  <details><summary>Links</summary><p>
-
-  * [Introducción al DOM](https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction)
-  * [Node.appendChild() - MDN](https://developer.mozilla.org/es/docs/Web/API/Node/appendChild)
-  * [Document.createElement() - MDN](https://developer.mozilla.org/es/docs/Web/API/Document/createElement)
-  * [Document.createTextNode()](https://developer.mozilla.org/es/docs/Web/API/Document/createTextNode)
-  * [Element.innerHTML - MDN](https://developer.mozilla.org/es/docs/Web/API/Element/innerHTML)
-  * [Node.textContent - MDN](https://developer.mozilla.org/es/docs/Web/API/Node/textContent)
-</p></details>
-
-### JavaScript
-
-- [ ] **Tipos de datos primitivos**
-
-  <details><summary>Links</summary><p>
-
-  * [Valores primitivos - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Data_structures#valores_primitivos)
-</p></details>
-
-- [ ] **Strings (cadenas de caracteres)**
-
-  <details><summary>Links</summary><p>
-
-  * [Strings](https://curriculum.laboratoria.la/es/topics/javascript/06-strings)
-  * [String — Cadena de caracteres - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String)
-</p></details>
-
-- [ ] **Variables (declaración, asignación, ámbito)**
-
-  <details><summary>Links</summary><p>
-
-  * [Valores, tipos de datos y operadores](https://curriculum.laboratoria.la/es/topics/javascript/01-basics/01-values-variables-and-types)
-  * [Variables](https://curriculum.laboratoria.la/es/topics/javascript/01-basics/02-variables)
-</p></details>
-
-- [ ] **Uso de condicionales (if-else, switch, operador ternario, lógica booleana)**
-
-  <details><summary>Links</summary><p>
-
-  * [Estructuras condicionales y repetitivas](https://curriculum.laboratoria.la/es/topics/javascript/02-flow-control/01-conditionals-and-loops)
-  * [Tomando decisiones en tu código — condicionales - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals)
-</p></details>
-
-- [ ] **Uso de bucles/ciclos (while, for, for..of)**
-
-  <details><summary>Links</summary><p>
-
-  * [Bucles (Loops)](https://curriculum.laboratoria.la/es/topics/javascript/02-flow-control/02-loops)
-  * [Bucles e iteración - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Loops_and_iteration)
-</p></details>
-
-- [ ] **Funciones (params, args, return)**
-
-  <details><summary>Links</summary><p>
-
-  * [Funciones (control de flujo)](https://curriculum.laboratoria.la/es/topics/javascript/02-flow-control/03-functions)
-  * [Funciones clásicas](https://curriculum.laboratoria.la/es/topics/javascript/03-functions/01-classic)
-  * [Arrow Functions](https://curriculum.laboratoria.la/es/topics/javascript/03-functions/02-arrow)
-  * [Funciones — bloques de código reutilizables - MDN](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Functions)
-</p></details>
-
-- [ ] **Pruebas unitarias (unit tests)**
-
-  <details><summary>Links</summary><p>
-
-  * [Empezando con Jest - Documentación oficial](https://jestjs.io/docs/es-ES/getting-started)
-</p></details>
-
-- [ ] **Módulos de ECMAScript (ES Modules)**
-
-  <details><summary>Links</summary><p>
-
-  * [import - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/import)
-  * [export - MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/export)
-</p></details>
-
-- [ ] **Uso de linter (ESLINT)**
-
-- [ ] **Uso de identificadores descriptivos (Nomenclatura y Semántica)**
-
-### Control de Versiones (Git y GitHub)
-
-- [ ] **Git: Instalación y configuración**
-
-- [ ] **Git: Control de versiones con git (init, clone, add, commit, status, push, pull, remote)**
-
-- [ ] **GitHub: Creación de cuenta y repos, configuración de llaves SSH**
-
-- [ ] **GitHub: Despliegue con GitHub Pages**
-
-  <details><summary>Links</summary><p>
-
-  * [Sitio oficial de GitHub Pages](https://pages.github.com/)
-</p></details>
-
-### UX (User eXperience)
-
-- [ ] **Diseñar la aplicación pensando en y entendiendo al usuario**
-
-- [ ] **Crear prototipos para obtener feedback e iterar**
-
-- [ ] **Aplicar los principios de diseño visual (contraste, alineación, jerarquía)**
-
-## 4. Consideraciones generales
-
-* El equipo de coaches te dará un tiempo sugerido e indicaciones sobre si trabajar
-  sola o en equipo. Recuerda que cada una aprende a diferente ritmo.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no
-  te preocupes, lo aprenderás durante este proyecto.
-
-## 5. Criterios de aceptación mínimos del proyecto
-
-Usa este alfabeto simple (solamente mayúsculas y sin ñ):
-
+El equipo de _coaches_ te dará un tiempo referencial para trabajar en este
+proyecto. También indicaciones sobre si trabajar individualmente o en dupla.
+Recuerda que cada quien aprende a un tirmo diferente, tiene más o menos tiempo
+adicional al _bootcamp_ disponible, experiencia previa distina, etc.
+
+## 3. Criterios de aceptación mínimos del proyecto
+Cuando hablemos de "criterios de aceptación", nos referimos a todo aquello que
+debe suceder con tu proyecto para que consideremos (tú y nosotras) que lo has
+"hecho" y que lo podemos "aceptar" como "mínimamente terminado".
+
+### 3.1 Alfabeto simplificado
+Considera solamente letras mayúsculas, sin ñ ni números u otros caracteres:
 * A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 
-### Definición del producto
+### 3.2 Interfaz de usuario. Lo que se ve en el navegador (UI del inglés _user interface_)
 
-En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso
-para definir el producto final a nivel de experiencia y de interfaz.
-
-* Quiénes son los principales usuarios de producto.
-* Cuáles son los objetivos de estos usuarios en relación con tu producto.
-* Cómo crees que el producto que estás creando está resolviendo sus problemas.
-
-### Interfaz de usuario (UI)
-
-La interfaz debe permitir al usuario:
-
-* Elegir un desplazamiento (_offset_) indicando cuántas posiciones queremos que
-  el cifrado desplace cada caracter.
-* Insertar un mensaje (texto) que queremos cifrar.
+Para cifrar debe permitir a tu usuaria:
+* Escribir el mensaje (texto) que quiere cifrar.
+* Elegir un desplazamiento (_offset_) indicando cuántas posiciones quiere que
+  el cifrado desplace **cada letra** del mensaje.
 * Ver el resultado del mensaje cifrado.
-* Insertar un mensaje (texto) a descifrar.
+
+Para descifrar debe permitir a tu usuaria:
+* Escribir el mensaje (texto) que quiere descifrar.
+* Indicar el desplazamiento (_offset_) que se utilizó para cifrar el mensaje.
 * Ver el resultado del mensaje descifrado.
 
-### Scripts / Archivos
+### 3.3 Repositorio del código (GitHub) y publicación de la web (GitHub Pages)
+Cuando termines, y antes de ir a la sesión de _Project Feedback_, tu código deberá
+estar subido a GitHub (_commit/push_) y la interfaz será desplegada (publicada)
+usando _GitHub pages_. Si no sabes lo que es GitHub, no te preocupes, lo
+aprenderás durante este proyecto.
 
+### 3.4 Sobre la definición de tu producto
+En **tu README.md**, cuéntanos cómo pensaste en las usuarias y cuál fue tu proceso
+para definir el producto final.
+
+* Quiénes son las principales usuarias del producto.
+* Cuáles son los objetivos que estas usuarias pueden conseguir al usar tu producto.
+* Cómo crees que el producto que estás creando está resolviendo sus necesidades.
+
+### 3.5 Consideraciones técnicas
+Toda esta sección puede resultarte muy abrumadora. Tómalo con calma, no es
+necesario que lo comprendas todo antes de comenzar, irá teniendo sentido conforme
+vas avanzando. Recuerda que el aprendizaje no es un proceso lineal.
+
+La lógica del proyecto debe estar implementada completamente en JavaScript. En
+este proyecto NO está permitido usar librerías o _frameworks_, sólo JavaScript
+puro también conocido como Vanilla JavaScript.
+
+No debes utilizar la _pseudo-variable_ `this`.
+
+#### 3.5.1 Sobre el _boilerplate_
+Llamamos **_boilerplate_** a la estructura de archivos y a toda la configuración
+de dependencias y _tests_ de ejemplo que ya existen en este repositorio y que te servirán como una "plantilla", como un punto de partida para trabajar.
+
+```text
+./
+├── .babelrc
+├── .editorconfig
+├── .eslintrc
+├── .gitignore
+├── README.md
+├── package.json
+├── src
+│   ├── cipher.js
+│   ├── index.html
+│   ├── index.js
+│   └── style.css
+└── test
+    ├── .eslintrc
+    └── cipher.spec.js
+```
+El _boilerplate_ incluye tareas que ejecutan [eslint](https://eslint.org/) y
+[htmlhint](https://github.com/yaniswang/HTMLHint) para verificar el `HTML` y
+`JavaScript` con respecto a una guía de estilos. Ambas tareas se ejecutan
+automáticamente antes de ejecutar las pruebas (_tests_) cuando usamos el comando
+`npm run test`. En el caso de `JavaScript` estamos usando un archivo de
+configuración de `eslint` que se llama `.eslintrc` que contiene un mínimo de
+información sobre el _parser_ que usar (qué version de JavaScript/ECMAScript), el
+entorno (_browser_ en este caso) y las [reglas recomendadas (`"eslint:recommended"`)](https://eslint.org/docs/rules/).
+En cuanto a reglas/guías de estilo en sí, usaremos las recomendaciones _por defecto_
+de tanto `eslint` como `htmlhint`.
+
+#### 3.5.2 Sobre los tests unitarios (pruebas)
+El _boilerplate_ incluye _tests_ (pruebas) de ejemplo como punto de partida.
+
+Los _tests_ unitarios (pruebas) deben cubrir un mínimo del 70% de _statements_,
+_functions_ y _lines_, y un mínimo del 50% de _branches_.
+
+El _boilerplate_ ya contiene el _setup_ y configuración necesaria para ejecutar
+los _tests_ (pruebas) así como _code coverage_ para ver el nivel de cobertura de
+los _tests_ usando el comando `npm test`.
+
+
+#### 3.5.3 Sobre tus Scripts / Archivos
 * `README.md`: debe explicar cómo descargar, instalar y ejecutar la aplicación
   así como una introducción a la aplicación, su funcionalidad y decisiones de
   diseño que tomaron.
@@ -281,89 +176,171 @@ La interfaz debe permitir al usuario:
 * `test/cipher.spec.js`: este archivo contiene algunos tests de ejemplo y acá
   tendrás que implementar los tests para `cipher.encode()` y `cipher.decode()`.
 
-## 6. Hacker edition
+## 4. Criterios de aceptación adicionales
+Si te alcanza el tiempo y las ganas para explorar un poco más, intenta:
 
-Las secciones llamadas _Hacker Edition_ son **opcionales**. Si **terminaste**
-con todo lo anterior y te queda tiempo, intenta completarlas. Así podrás
-profundizar y/o ejercitar más sobre los objetivos de aprendizaje del proyecto.
+* Cifrar minúsculas, ñ, números, etc. El _boilerplate_ incluye algunos tests
+(comentados en principio) que puedes usar como punto de partida para implementar el soporte para estos casos.
 
-La descripción general de este proyecto no menciona qué pasaría con las letras
-minúsculas y otros caracteres (como espacios, puntuación, ñ, ...). El
-boilerplate incluye algunos tests (comentados en principio) que puedes usar como
-punto de partida para implementar el soporte para estos casos.
+* Permitir un _offset_ negativo.
 
-Tampoco se menciona qué pasaría si el offset fuera negativo. Como parte del
-hacker edition te invitamos a explorar también esta caso por tu cuenta.
+## 5. Objetivos de aprendizaje
 
-## 7. Consideraciones técnicas
+### HTML y CSS
 
-La lógica del proyecto debe estar implementada completamente en JavaScript. En
-este proyecto NO está permitido usar librerías o frameworks, solo JavaScript puro
-también conocido como Vanilla JavaScript.
+* [ ] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
+* [ ] Uso de selectores de CSS.
+* [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
 
-Los tests unitarios deben cubrir un mínimo del 70% de _statements_, _functions_
-y _lines_, y un mínimo del 50% de _branches_. El _boilerplate_ ya contiene el
-setup y configuración necesaria para ejecutar los tests (pruebas) así como _code
-coverage_ para ver el nivel de cobertura de los tests usando el comando `npm
-test`.
+### DOM
 
-El _boilerplate_ incluye tests (pruebas) de ejemplo como punto de partida.
+* [ ] Uso de selectores del DOM.
+* [ ] Manejo de eventos del DOM.
+* [ ] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
+(appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
 
-Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
-repositorio que contiene el _boilerplate_.
+### JavaScript
 
-El _boilerplate_ contiene una estructura de archivos como punto de partida así
-como toda la configuración de dependencias y tests de ejemplo:
+* [ ] Manipulación de strings.
+* [ ] Uso de condicionales (if-else | switch | operador ternario)
+* [ ] Uso de bucles (for | for..in | for..of | while)
+* [ ] Uso de funciones (parámetros | argumentos | valor de retorno)
+* [ ] Declaración correcta de variables (const & let)
 
-```text
-./
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── README.md
-├── package.json
-├── src
-│   ├── cipher.js
-│   ├── index.html
-│   ├── index.js
-│   └── style.css
-└── test
-    ├── .eslintrc
-    └── cipher.spec.js
-```
+### Testing
 
-El _boilerplate_ incluye tareas que ejecutan [eslint](https://eslint.org/) y
-[htmlhint](https://github.com/yaniswang/HTMLHint) para verificar el `HTML` y
-`JavaScript` con respecto a una guías de estilos. Ambas tareas se ejecutan
-automáticamente antes de ejecutar las pruebas (tests) cuando usamos el comando
-`npm run test`. En el caso de `JavaScript` estamos usando un archivo de
-configuración de `eslint` que se llama `.eslintrc` que contiene un mínimo de
-información sobre el parser que usar (qué version de JavaScript/ECMAScript), el
-entorno (browser en este caso) y las [reglas recomendadas (`"eslint:recommended"`)](https://eslint.org/docs/rules/).
-En cuanto a reglas/guías de estilo en sí,
-usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
+* [ ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
+
+### Estructura del código y guía de estilo
+
+* [ ] Organizar y dividir el código en módulos (Modularización)
+* [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
+* [ ] Uso de linter (ESLINT)
+
+### Git y GitHub
+
+* [ ] Uso de comandos de git (add | commit | pull | status | push)
+* [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
+
+### UX
+
+* [ ] Diseñar la aplicación pensando y entendiendo al usuario.
+* [ ] Crear prototipos para obtener feedback e iterar.
+* [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
 
 ***
 
-## 8. Pistas, tips y lecturas complementarias
+## 6. Recomendaciones generales
 
-### Primeros pasos
+Pierde el miedo a preguntar a tus _coaches_ y a tus compañeras. Estás aquí
+porque quieres aprender. Si ya supieras, estarías trabajando como _developer_
+y no el _bootcamp_ de Laboratoria.
+
+Hazte amiga de Trello. No solamente te ayudará a organizar tu trabajo, es
+también una excelente manera de ir razonando sobre los pasos que seguirás,
+en qué orden hacerlos, identificar qué necesitas aprender, etc.
+
+Al prinncipio, Git y GitHub te resultarán misteriosos, no les temas y úsalos a
+tu favor. Procura hacer _commits_ con frecuencia, eso te ayudará a tener un respaldo
+en todo momento y podrás acceder a él siempre que lo necesites. ¡No lo dejes al final!
+
+Anímate a correr los _tests_ cuanto antes para que te ayude a la construcción de
+tus funciones.
+
+### 6.1 Primeros pasos, tu prototipo en papel
+Comienza por la ideación y el prototipado de tu proyecto. Dibuja en papel y lápiz
+exactamente cada elemento que tendrá tu interfaz y prueba con algunas personas
+para ver si se comprende, si es suficientemente intuitivo, etc.
+
+Este paso es fundamental para que tú misma comprendas si tus ideas "funcionan"
+fuera de tu cabeza. Te ayudará a entender mejor todo lo que tienes que hacer.
+**No inviertas demasiado tiempo en esto. Con uns pocas horas debería ser más
+que suficiente.**
+
+A partir de acá puedes seguir por diferntes caminos. Es como armar un rompecabezas
+o _puzzle_, puedes comenzar por una esquina, luego otra, un pedazo de un borde,
+de otro, etc. Poco a poco te será más fácil ver "el todo" y entender cómo encajan
+todas las partes.
+
+Te sugerimos seguir por lo que menos sabes. Evita caer en el juego de
+"la ilusión del avance". Quizás te sienteas "cómoda" trabajando en HTML y CSS
+porque lo que haces se "ve" en el navegador y puede resultarte más fácil de comprender.
+Si te quedas trabajando en eso tendrás la sensación de estar "avanzando", pregúntante
+si estás "aprendiendo". No estás acá para "entregar proyectos", estás para aprender
+lo que no sabes.
+
+### 6.2 Achicando el gran problema en problemas más pequeños
+Un "superpoder" que esperamos puedas desarrollar durante el _bootcamp_ es el de
+definir "mini-proyectos" que te acerquen paso a paso a la solución del
+"gran proyecto". Es el equvalente a comenzar armando esquinas o bordes del
+rompecabezas/puzzle sin saber necesariamente cómo encajarán al final. Déjate
+llevar y explora. Estas son algunas sugerencias:
+
+#### "Mover" un valor de una caja de texto a otra
+Crea una interfaz simple con 2 cajas de texto y un botón. Si escribo algo en la
+caja de texto 1 y le doy click al botón, quiero que lo que escribí se "mueva"
+desde la caja 1 hacia la caja 2.
+
+Para lograr esto tendrás que aprender a: detectar un evento en el navegador (_click_), identificar un elemento de tu interfaz para obtener su contenido/valor (la caja de texto 1), "escribir" un valor en otro elemento de la interfaz (caja de texto 2).
+
+#### "Convertir" una letra en su código ASCII
+Pensando en la misma interfaz anterior (2 cajas de texto y 1 botón). Quiero
+escribir A o B (una sola) en la caja de texto 1 y que cuando le dé _click_ al botón,
+aparezca el código ASCII de la letra en la caja de texto 2.
+
+Ahora no solamente estás "leyendo" y "escribiendo" valores en el navegador, también
+tendrás que "manipularlos" antes de "escribirlos".
+
+#### "Cifrar" A o B con un desplazamiento (_offset_) de 3
+Cuando escriba A o B en la caja de texto 1 y le dé click al botón, quiero que
+apaezca la letra cifrada en la caja de texto 2. Por ejemplo, si escribo B
+debe aparecer E.
+
+#### "Cifrar" una letra con un desplazamiento de 30 caracteres
+En los casos anteriores probamos con letras y con un desplazamiento que no
+implicaban llegar "más allá" de final del alfabeto. Ahora prueba con un caso que
+sí lo requiera. Por ejmplo 30 caracteres de desplazamiento. Para esto te puede
+ayudar el video de la sección "Recursos y temas relacionados". **La fórmula no es
+lo importante en este proyecto, lo importante es lo que haces con la fórmula.**
+
+#### "Cifrar" tres letras con un desplazamiento cuqlquiera
+Hasta ahora hemos explorado trabajar con una sola letra pero ¿cómo haríamos si
+son más? Para hacerlo tendrás que aprender cómo ir cifrando letra por letra y
+ya estás mucho más cerca de resolver el proyecto "grande"
+
+Fíjate que la complejidad es creciente, la clave está en definir el primer paso
+lo más simple y pequeño que puedas. Luego tú misma puedes ir agregando complejidad
+a medida que avanzas.
+
+### 5.3 Tu caja de arena para "jugar"
+Así como existen las cajas de arena para que las niñas jueguen en un espacio
+seguro y controlado", tú también puedes procurarte condiciones "controladas" en
+las que puedas identificar lo que te falla. Si comienzas explorando y probando
+en archivos con muchas líenas de código y muchas cosas sucediento al mismo tiempo,
+será difícil que sepas qué falla y/o por qué no te funciona algo que acabas de
+leer y estás segura en entender. Esto puede ser muy frustrante y hacerte perder
+mucho tiempo.
+
+Para probar los mini-proyectos que te proponnemos, puedes hacerlo en un
+proyecto/archivos en blanco en los que tú tienes el control y sabes exactamente
+qué es y qué hace cada cosa. También puedes utilizar CodePen o Replit (por ejemplo).
+
+### 6.4 Herramientas y configuración de tu PC
 
 1. Antes que nada, asegúrate de tener un :pencil: editor de texto en
    condiciones, algo como [Atom](https://atom.io/) o
    [Code](https://code.visualstudio.com/).
 2. Para ejecutar los comandos a continuación necesitarás una :shell:
-   [UNIX Shell](https://curriculum.laboratoria.la/es/topics/shell),
+   [UNIX Shell](../../topics/shell),
    que es un programita que interpreta líneas de comando (command-line
-   interpreter) así como tener [git](https://curriculum.laboratoria.la/es/topics/scm/01-git)
+   interpreter) así como tener [git](../../topics/scm/01-git)
    instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS,
    ya tienes una _shell_ (terminal) instalada por defecto (y probablemente `git`
    también). Si usas Windows puedes usar la versión completa de [Cmder](https://cmder.net/)
    que incluye [Git bash](https://git-scm.com/download/win) y si tienes Windows
    10 o superior puedes usar [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
-3. Una de las integrantes del equipo debe realizar un :fork_and_knife:
-   [fork](https://help.github.com/articles/fork-a-repo/) del repo de tu cohort,
+3. Tú o una de las integrantes del equipo debe realizar un :fork_and_knife:
+   [fork](https://help.github.com/articles/fork-a-repo/) del repositorio de tu cohort,
    tus _coaches_ te compartirán un _link_ a un repo y te darán acceso de lectura
    en ese repo. La otra integrante del equipo deber hacer un fork **del
    repositorio de su compañera** y
@@ -378,43 +355,36 @@ usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
 7. Para ver la interfaz de tu programa en el navegador, usa el comando
    `npm start` para arrancar el servidor web y dirígete a
    `http://localhost:5000` en tu navegador.
-8. A codear se ha dicho! :rocket:
 
-### Recursos y temas relacionados
+## 7. Recursos y temas relacionados
 
-A continuación un video de Michelle que te lleva a través de la fórmula
-matemática del Cifrado César y un par de cosas más que debes saber para
-resolver este proyecto. ¡Escúchala con detenimiento y sigue sus consejos! :)
+### 7.1 fórmula matemática del Cifrado César y un par de cosas más
+A continuación un video de Michelle ¡Escúchala con detenimiento y sigue sus consejos! :)
 
 [![tips caesar cipher](https://img.youtube.com/vi/zd8eVrXhs7Y/0.jpg)](https://www.youtube.com/watch?v=zd8eVrXhs7Y)
 
 [Link](https://www.youtube.com/watch?v=zd8eVrXhs7Y)
 
-También una metodología para empezar a desarrollar tareas con JavaScript:
-
-[![Resolución de problemas con JavaScript](http://i3.ytimg.com/vi/lYfEmhLmu7A/hqdefault.jpg)](https://www.youtube.com/watch?v=lYfEmhLmu7A)
-
-[Link](https://www.youtube.com/watch?v=lYfEmhLmu7A)
-
-Terminal y shell de UNIX:
+### 7.2 Terminal y shell de UNIX:
 
 [![Playlist de Terminal y shell de UNIX](https://img.youtube.com/vi/GB35Eyb-J4c/0.jpg)](https://www.youtube.com/playlist?list=PLiAEe0-R7u8nGH5TEHfSTeDNIvjZFe_Yd)
 
 [Link](https://www.youtube.com/playlist?list=PLiAEe0-R7u8nGH5TEHfSTeDNIvjZFe_Yd)
 
-Control de versiones y trabajo colaborativo con Git y GitHub:
+### 7.3 Control de versiones y trabajo colaborativo con Git y GitHub:
 
 [![Playlist de control de versiones y trabajo colaborativo](https://img.youtube.com/vi/F1EoBbvhaqU/0.jpg)](https://www.youtube.com/playlist?list=PLiAEe0-R7u8k9o3PbT3_QdyoBW_RX8rnV)
 
 [Link](https://www.youtube.com/playlist?list=PLiAEe0-R7u8nGH5TEHfSTeDNIvjZFe_Yd)
 
-Diseño de experiencia de usuario (User Experience Design):
+### 7.4 Temas relacionados
+#### Diseño de experiencia de usuario (User Experience Design):
 
 * Ideación
 * Prototipado (sketching)
 * Testeo e Iteración
 
-Desarrollo Front-end:
+#### Desarrollo Front-end:
 
 * Valores
 * Tipos
@@ -426,27 +396,29 @@ Desarrollo Front-end:
 * [Aprende más sobre `ASCII`](http://conceptodefinicion.de/ascii/)
 * [Documentación de NPM](https://docs.npmjs.com/)
 
-Organización del Trabajo:
+#### Organización del Trabajo:
 
 * [Metodologías Ágiles](https://www.youtube.com/watch?v=v3fLx7VHxGM)
 * [Scrum en menos de 2 minutos](https://www.youtube.com/watch?v=TRcReyRYIMg)
 * [Scrum en Detalle](https://www.youtube.com/watch?v=nOlwF3HRrAY&t=297s). No
   esperamos que hagas todo eso desde este proyecto. Iremos profundizando poco a
   poco a lo largo del -_bootcamp_.
-* [Guía para Cifrado César](https://docs.google.com/presentation/d/e/2PACX-1vTQ7-8LZDHrT4Y6AOBN72Nkfz1eJAeseBHpcHX8BSq0aFCFoZmuMjluMeyFNgK9ISKxTz0H03yGfJiT/pub?start=false&loop=false&delayms=60000)
 
-## 9. Checklist
+## 8. Checklist
+<details>
+  <summary>!Click para expandir¡</summary>
 
 Esta sección está para ayudarte a llevar un control de lo que vas completando.
 
-### Parte Obligatoria
+### Criterios de aceptación mínimos
 
 * [ ] `README.md` incluye info sobre proceso y decisiones de diseño.
-* [ ] `README.md` explica claramente quiénes son los usuarios y su relación con
+* [ ] `README.md` explica quiénes son las usuarias y su relación con
   el producto.
-* [ ] `README.md` explica claramente cómo el producto soluciona los
-  problemas/necesidades de los usuarios.
+* [ ] `README.md` explica cómo el producto soluciona los problemas/necesidades
+de las usuarias.
 * [ ] Usa VanillaJS.
+* [ ] No utiliza `this`.
 * [ ] Implementa `cipher.encode`.
 * [ ] Implementa `cipher.decode`.
 * [ ] Pasa linter con configuración provista.
@@ -460,7 +432,7 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
 * [ ] Interfaz permite escribir un texto para ser descifrado.
 * [ ] Interfaz muestra el resultado del descifrado correctamente.
 
-### Parte Opcional: "Hacker edition"
+### Criterios de aceptación adicionales (opcionales)
 
 * [ ] Cifra/descifra minúsculas
 * [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
