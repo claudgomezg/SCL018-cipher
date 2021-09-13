@@ -405,8 +405,6 @@ A continuación un video de Michelle ¡Escúchala con detenimiento y sigue sus c
   poco a lo largo del -_bootcamp_.
 
 ## 8. Checklist
-<details>
-  <summary>!Click para expandir¡</summary>
 
 Esta sección está para ayudarte a llevar un control de lo que vas completando.
 
@@ -438,7 +436,7 @@ de las usuarias.
 * [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
 * [ ] Permite usar un `offset` negativo.
 
-</details>
+
 
 </details>
 
