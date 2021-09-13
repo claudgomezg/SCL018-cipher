@@ -8,8 +8,7 @@ let encodeText = "";
     for (let i = 0; i < textIn.length; i++) {
 //hacemos una variable que sera el numero ascii que nos dará el charCodeAt 
     let asciiNumber = textIn.charCodeAt(i);
-/*hacemos una condicional si el numero ascii es mayor o igual a 65 es true y si 
-es menor o igual que 90 es true entonces se aplica la formula para cifrar en mayusculas*/
+/*hacemos una condicional si los números están dentro del rango 65 a 90 entonces se aplica la formula para cifrar en mayusculas*/
     if (asciiNumber >= 65 && asciiNumber <= 90) {
         let capitalLetters = (asciiNumber - 65 + parseInt(offset)) % 26 + 65;
         encodeText += String.fromCharCode(capitalLetters);
