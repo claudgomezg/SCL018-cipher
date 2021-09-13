@@ -79,11 +79,21 @@ video {
     height: 400px;
 }
 
+h4 {
+    font-size: 20px;
+    text-justify: center;
+    margin-left: 17%;
+    margin-right: 10%;
+    font-family: "Times New Roman";
+    color: rgb(222,216,184);
+
+}
+
 h2  {
-    text-align: justify;
+    text-align: center;
     color: rgb(222,216,184);
     font-size: 20pt;
-    margin: 3%;
+    margin: 7%;
     margin-top: 6%;
 }
 
@@ -108,7 +118,7 @@ button:hover{
 .homeBtn {
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 7%;
 }
 
 textarea {
@@ -264,6 +274,7 @@ section:target p {
         margin-right: 10%;
         font-family: "Times New Roman";
     }
+
     video {
         flex-direction: column;
         width: 390px;
