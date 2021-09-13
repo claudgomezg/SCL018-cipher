@@ -70,7 +70,7 @@ adicional al _bootcamp_ disponible, experiencia previa distina, etc.
 Cuando hablemos de "criterios de aceptación", nos referimos a todo aquello que
 debe suceder con tu proyecto para que consideremos (tú y nosotras) que lo has
 "hecho" y que lo podemos "aceptar" como "mínimamente terminado".
-
+           
 ### 3.1 Alfabeto simplificado
 Considera solamente letras mayúsculas, sin ñ ni números u otros caracteres:
 * A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
@@ -405,8 +405,6 @@ A continuación un video de Michelle ¡Escúchala con detenimiento y sigue sus c
   poco a lo largo del -_bootcamp_.
 
 ## 8. Checklist
-<details>
-  <summary>!Click para expandir¡</summary>
 
 Esta sección está para ayudarte a llevar un control de lo que vas completando.
 
@@ -438,7 +436,6 @@ de las usuarias.
 * [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
 * [ ] Permite usar un `offset` negativo.
 
-</details>
 
 </details>
 
@@ -504,4 +501,3 @@ El grado de alfabetización digital que tendrían que tener los usuarios es bajo
 https://claudgomezg.github.io/SCL018-cipher/src/
 <br>
 https://yesvrv.github.io/SCL018-cipher/src/
-
