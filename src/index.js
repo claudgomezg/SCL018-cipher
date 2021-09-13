@@ -99,7 +99,7 @@ decodeBtn.addEventListener("click", () => {
 const eraseBtn = document.getElementById("eraseButton");
 
 eraseBtn.addEventListener("click", () => {
-    document.getElementById("displacement").value = 0;
+    document.getElementById("displacement").value = "";
     document.getElementById("message").value = "";
     document.getElementById("outputMessage").value = "";
 });
