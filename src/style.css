@@ -3,7 +3,7 @@
     src: url("fonts/JMH_Typewriter-Bold.ttf");
 }
 
-body {
+body { 
     background-repeat: no-repeat;
     background-size:cover;
     background-image: url(img/background.png);
@@ -15,12 +15,11 @@ header {
     justify-content: center;
 }
 
-figure {
+#logo {
     display: flex;
     margin: 0%;
-    width: 100px;
-    height: 100px;
-    
+    width: 90px;
+    height: 96px;
 }
 
 h1 {
@@ -28,103 +27,161 @@ h1 {
     font-size: 50pt;
     color: rgb(160,125,133);
     margin:0%;
-    margin-top: 2%;
+    margin-top: 1%;
+    /* BACKGROUND TITULO */
+    background-image: url(img/logoBG.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-filter: contrast(80%);
+    filter: contrast(80%);
+    /* BACKGROUND TITULO */
 }
 
 .container {
     border-radius: 25px;
-    background-color: black;
-    opacity: 0.8;
+    background-color: rgb(0, 0, 0, .8);
     padding: 15px;
     align-items: center;
     margin: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+
+figcaption{
+    color: rgb(222,216,184);
+    font-family: "Times New Roman";
+    font-size:9pt;
+    margin-left: 11%;
+}
+
+#DorisGabriela {
+    width: 450px;
+    height: 310px;
+    margin-top: 5%;
+    border-radius: 5%;
+}
+
+#DorisGabriela:hover {
+    filter: grayscale(70%)
+}
+
+#youtubeDocumental {
+    margin-top: 0%;
+    border-radius: 5%;
+    display: flex;
+    margin-left: 3%;
+}
+
+video {
+    width: 487px;
+    height: 400px;
 }
 
 h2  {
-    align-content: center;
-    text-align: center;
-    color: rgb(160,125,133);
-    font-size: 24pt;
+    text-align: justify;
+    color: rgb(222,216,184);
+    font-size: 20pt;
     margin: 3%;
+    margin-top: 6%;
 }
 
 button {
-    background: rgb(160,125,133);
+    background: rgb(160,125,133, 0.6);
     border-radius: 12px;
     border: 1px solid rgba(0, 0, 0, 0.4);
-    color: #FAFAFA;
-    font-size: 24px;
+    color: rgb(222,216,184);
+    font-size: 22px;
     height: 50px;
-    width: 180px;
+    width: 120px;
+    font-family: "Times New Roman";
+    font-weight: 600;
+    margin-bottom: 1%;
+}
+
+button:hover{
+    background-color: rgba(160, 125, 133);
+    transition: ease 0.2s;
 }
 
 .homeBtn {
     display: flex;
     justify-content: center;
+    margin-top: 10%;
 }
 
 textarea {
     width: 400px;
     height: 200px;
     border-radius: 25px;
-    font-size: 10pt;
-    padding: 1%;
+    font-size: 12pt;
+    padding: 6%;
     margin: 0%;
     text-align: justify;
     resize: none;
+    outline: none;
     font-family: Typewritter;
+    background-image: url(img/letterBackground2.PNG);
 }
 .entryText {
     display: flex;
     justify-content: center;
     margin-right: 0;
-
 }
 
 h3 {
-    color:blanchedalmond;
+    color:rgb(222,216,184);
     font-size: 20pt;
     display: flex;
     justify-content: center;
+    font-family: "Times New Roman";
 }
 
-/* FIX THIS NONSENSE */
 .centerCipher {
     display: flex;
     justify-content: center;
 }
-/* END FIX THIS NONSENSE */
 
-/* TEST */
 #displacement{
-    font-size: 18pt;
+    font-size: 10pt;
     text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    margin-left: 4%;
+    margin-right: 4%;
+    outline: none;
+    width: 50px;
 }
 
-/* TEST COLUMNAS */
 .columnContainer {
-    margin: 0%;
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+    border-collapse: separate
 }
 
 .cipherContainer {
-    margin: 0%;
     display: inline-block;
+    flex: 1;
+    margin: 0 8px; 
+    border-collapse: separate
 }
 
 .poemContainer {
-    width: 500px;
-    box-shadow: 7px 13px 37px rgba(0, 0, 0, .5);
+    /* box-shadow: 7px 13px 37px rgba(0, 0, 0, .2); */
     display: inline-block;
+    flex: 3;
+    margin: 0 8px;
+    
 }
 
 section p {
     overflow: hidden;
     max-height: 0;
     text-align: justify;
-    font-family: "Courier New", Courier, monospace;
-    background: #e4e4e4;
     transition: all 0.2s ease-in;
     font-family: Typewritter;
+    background-image: url(img/letterBackground2.PNG);
 }
 
 section a {
@@ -132,13 +189,90 @@ section a {
     display: block;
     text-align: left;
     padding: 10px;
-    font-family: "Courier New", Courier, monospace;
-    background-color: #212121;
-    border-bottom: 2px solid gray;
-    color: white;
+    font-size: 15pt;
+    font-family: "Times New Roman";
+    font-weight: 700;
+    background-color: rgb(0, 0, 0, .3);
+    border-bottom: 4px solid rgb(108,86,90);
+    color:rgb(222,216,184);
 }
 
 section:target p {
-    max-height: 120px;
+    max-height: 300px;
     padding: 10px;
+    overflow: auto;
+}
+
+.landingContainer{
+    display: flex;
+}
+
+#displacement {
+    font-family: Typewritter;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 4%;
+    margin-right: 4%;
+    background-image: url(img/letterBackground2.PNG);
+    border-radius: 25%;
+}
+
+::placeholder {
+    color:rgba(0, 0, 0, 0.65);
+}
+
+#arrow {
+    width: 50px;
+    height: 50px;
+}
+
+.eraseBtn {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 5%;
+    align-items: center
+}
+
+@media (max-width: 800px){
+    .container {
+        flex-direction: column;
+        margin: auto;
+    }
+    .landingContainer {
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    .cipherContainer{
+        flex-direction: column;
+        margin: auto;
+    }
+    .columnContainer{
+        flex-direction: column;
+        margin: auto;
+    }
+    h1 {
+        font-size: 50px;
+        text-justify: distribute;
+        margin-top: 7%;
+    }
+    h2 {
+        font-size: 18px;
+        text-justify: distribute;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-family: "Times New Roman";
+    }
+    video {
+        flex-direction: column;
+        width: 390px;
+        height: 300px;
+        margin: auto;
+    }
+    #DorisGabriela {
+        width: 350px;
+        height: 230px;
+        size: auto;
+    }
 }

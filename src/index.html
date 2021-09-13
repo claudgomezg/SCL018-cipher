@@ -3,59 +3,138 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
   <div class="container">
-    <section id='home'>
+    <section id="home">
       <header>
-        <figure>
-          <img src="img/logoGabriela.png">
-        </figure>
+        <img id="logo" src="img/logoGabriela.png">  
         <h1>abriela Mistral</h1>
       </header>
-      <main>
-        <h2>Hasta hace unos años se reveló la correspondencia que mantenía la poetisa con su asistente Doris Dana.</h2> 
-        <h2>Estas cartas necesitan ser reveladas en esta deuda histórica que mantiene Chile con la escritora.</h2>
-        <h2>Descifra el contenido de estas cartas.</h2>
-        <div class="homeBtn" id="showCipher"><button type="button">Comencemos</button>
-        </div>  
+          <div class="landingContainer">
+            <section id="GabrielaPhoto">
+            <figure> 
+              <img src="img/imgLanding.png" id="DorisGabriela">       
+            <figcaption>Doris Dana (izquierda) y Gabriela Mistral (derecha). 
+            Nueva York, 1954. <br>
+            Pulsa la imagen para escuchar una pequeña conversación entre ellas.
+            </figcaption></figure>
+          </section>
+
+          <section style="display: none;" id="youtubeDocumental">
+            <video width="450" height="350" controls muted>
+              <source src="video/Fragmento-Gabriela-Doris.mp4" type="video/mp4" >
+            </video>
+          </section>
+            
+            <div class="firstTextContainer">
+              <br>
+              <h2>Hasta hace unos años se reveló la correspondencia que mantenía la poetisa con su asistente Doris Dana</h2>
+              <h2>Estas cartas necesitan ser reveladas en esta deuda histórica que mantiene Chile con la escritora</h2>
+              <h2>Descifra el contenido de estas cartas</h2>
+              <div class="homeBtn" id="showCipher"><button type="button">Comenzar</button></div> 
+            </div>
+          </div>
     </section>
       
     <section style="display: none;" id="cipher">
+      <box-icon><img src="img/arrow.png" id="arrow"></box-icon>
       <div class="columnContainer">
         <div class= "poemContainer">
           <section id="menu1">
-            <a href="#menu1">Carta a Doris Dana, 1945.</a>
-            <p>EN CUANTO A TU MIEDO DE PERDERME, TU FALTA COMPLETA DE CONFIANZA, YO NO ME MEREZCO ESO, QUE ME DA UN POCO DE CÓLERA Y UN MUCHO DE TRISTEZA, CASI DE AMARGURA. YO NO SOY UNA SINVERGÜENZA, NO, MI AMOR, YO NO SOY ESO QUE TÚ IMAGINAS. SOY UNA DESGRACIADA SI TÚ SIGUES SIN TENER FE EN TU GABRIELA</p>
+            <a href="#menu1">Aquí puedes ver las instrucciones</a>
+            <p>Paso 1.- Haz click en una de las cartas y automáticamente el contenido de esta será copiada
+              a tu portapapeles.
+              <br>
+              Paso 2.- Pega la carta en la primera caja al costado derecho de tu pantalla.
+              <br>
+              Paso 3.- Selecciona el número de cifrado que te indica cada una de las cartas en el pequeño recuadro numérico 
+              (en el caso de la primera carta, el cifrado sería "20").
+              <br>
+              Paso 4.- Luego haz click en el botón "descifrar" y podrás leer la carta.
+              <br>
+              <br>
+              Por último, utiliza el botón "limpiar" para vaciar las cajas de texto e ir repitiendo el proceso con las demás cartas.
+              <br>
+              <br>
+              ¡También podrás cifrar y descifrar tus propias cartas o mensajes ocultos!
+              <br>
+            </p>
           </section>
       
           <section id="menu2">
-            <a href="#menu2">Menu 2</a>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, aspernatur delectus soluta quibusdam et voluptatum, laborum perspiciatis natus nostrum alias quos cupiditate, necessitatibus autem ex. Animi fugiat veritatis dignissimos commodi?</p>
+            <a href="#menu2" id="copy-text-btn">9 de abril de 1949, cifrado 20.
+            </a>
+            <p id="letter1">Si uwuvi xy iíl no pit: ¡Ny fi ualuxywí nuhni! 
+              Xymxy koy ny zocmny si hi líi s my gy uwogofu yh fu muhaly hi mé koé gunylcu xyhmu s imwolu. 
+              Si hi lywcví wigi gc julny ohu gyfuhwifíu wihmnuhny xy fu wouf gy buh bywbi mufcl mifugyhny fim hcñim, fu gúmcwu s nú. 
+              S nú lywcvcmny wigi julny ohu luwcóh xy ufyalíu, nugvcéh wihmnuhny, 
+              jyli, uxygám lywcvcmny fu aluwcu xy xulfu s xy gynylfu xy jywbi uxyhnli bumnu yh fim mylym gám áwcxim.
+            </p>
           </section>
         
           <section id="menu3">
-            <a href="#menu3">Menu 3</a>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, aspernatur delectus soluta quibusdam et voluptatum, laborum perspiciatis natus nostrum alias quos cupiditate, necessitatibus autem ex. Animi fugiat veritatis dignissimos commodi?</p>
+            <a href="#menu3" id="copy-text-btn2">18 de abril de 1949, cifrado 33.
+              </a>
+            <p id="letter2">¿Jótv lz wvzpisl, tp htvy, xbl klzwbéz kl ohily slíkv shz jhyahz tíhz aú zpnhz kbkhukv, 
+              wluhukv, klzlzwlyhukv? Lz bu wljhkv, ¿ohf bu wlspnyv kl wlyklytl? Lzaáz svjh kl hahy. Hf, klmpéuklal 
+              kl lzl klzchyív. Khal jbluah kl xbl ohf luayl uvzvayvz hsnv tbf wvklyvzv, bu cíujbsv leayhñv, xbl klil 
+              clupy kl vayh lujhyuhjpóu. Fv al zbwspjv kvz jvzhz: wyptlyv, xbl clhz kl aluly aylz kphnuózapjvz: zlnbukv,
+              xbl zhxblz mblygh kl ap f lzwlylz lzvz kíhz xbl mhsahu whyh cvscly h clyzl f uv zvsahyzl táz. 
+              Zí, whyh uv zvsahyzl táz, cpkh tíh. Ohz oljov buh avywlgh tbf nyhukl féukval f cvscpéukval buh zvykh h tpz
+              wlkpkvz kl uv whyapy.
+              Lu jbhuav h ab tplkv kl wlyklytl, h ab mhsah jvtwslah kl jvumphugh, al kpnv xbl fv uv tl tlylgjv lzv, 
+              xbl tl kh bu wvjv kl jóslyh f bu tbukv kl aypzalgh, jhzp kl hthynbyh. 
+              Fv uv zvf buh zpuclynülugh, uv, tp htvy, fv uv zvf lzv xbl aú pthnpuhz. 
+              Lz wyljpzv xbl fv zlwh wvy ab jhyah wyóepth xbl aú jyllz lu tí. 
+              Zvf buh klznyhjphkh zp aú zpnblz zpu aluly ml lu ab Nhiyplsh.
+            </p>
           </section>
-        
           <section id="menu4">
-            <a href="#menu4">Menu 4</a>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, aspernatur delectus soluta quibusdam et voluptatum, laborum perspiciatis natus nostrum alias quos cupiditate, necessitatibus autem ex. Animi fugiat veritatis dignissimos commodi?</p>
+            <a href="#menu4" id="copy-text-btn3">21 de abril de 1949, cifrado 4.</a>
+            <p id="letter3">Zis ip gmips, vigyivhs qmppsriw hi gmipsw wsfvi pe gefide qáw uyivmhe ir ip qyrhs. 
+              C tmirws «iwxi qmwqs gmips xsge e pe gefide hi qm uyivmhe», c cs qerhs e xm yr fiws, 
+              yr xsuyi xmivrs c etewmsrehs tsv psw ryfiw uyi tewer, uyi xep zid zer e zivxi tvsrxs. 
+              C xirks gipsw hi iwxsw ryfiw uyi tyihir zivxi qáw tvsrxs uyi cs. 
+              C ip zmirxs -ip zmirxs qi efvede- c cs vyiks ep zmirxs «efvede e ippe teve qí, 
+              leke uyi ippe uyi iw qm efveds, xmivrs, c etewmsrehs». 
+              Cs qi tsrks ir ip zmirxs c ir pe ppyzme xmivre, teve uyi iwxsw, zmirxs c ppyzme, 
+              tyihir efvedevxi c fiwevxi teve qí.
+            </p>
+          </section>
+
+          <section id="menu5">
+            <a href="#menu5" id="copy-text-btn4">22 de abril de 1949, cifrado 5.</a>
+            <p id="letter4">Yú st rj htsthjx ytifaíf gnjs, rn frtw. 
+              Yú nlstwfx qf uwtkzsinifi ij rn aíshzqt htsynlt. 
+              Ifrj ynjrut, iárjqt, ufwf mfhjwyj zs utht kjqne. 
+              Yjsrj ufhnjshnf, jxujwf f ajw d f tíw qt vzj yú jwjx ufwf rí.
+            </p>
+          </section>
+
+          <section id="menu6">
+            <a href="#menu6" id="copy-text-btn5">24 de noviembre de 1949, cifrado 2.
+              </a>
+            <p id="letter5">Rtqewtq ewkfctog fg vk. Aq pq vgpiq tcbóp fg xkxkt. 
+              Ewcpfq nngicuvg, aq pq vgpíc pcfc, rctgeíc fgupwfc, 
+              nc rqdtgbc rwtc a gn vgfkq a wpc xkxc tgrwipcpekc fg xkxkt. 
+              Vqfq nq jcu owfcfq vú a gurgtq swg nq jcacu xkuvq.Wp cdtcbq vkgtpq, Icdtkgnc.
+            </p>
           </section>
         </div>
+
         <div class="cipherContainer">
-          <h3>Aquí irán las instrucciones.</h3>
-          <div class="entryText"><textarea name="textarea" rows="10" cols="20" id="message" placeholder="Ingresa el texto a cifrar aquí (sin Ñ)"></textarea></div>
+          <div class="entryText"><textarea name="textarea" rows="10" cols="20" id="message" placeholder="Ingresa el texto a cifrar aquí"></textarea></div>
           <br>
           <div class="centerCipher">
-            <input id="displacement" type='number' min='1' max='26'></input>
-            <button type="button" class="cipherBtn" id="cifrar">Cifrar</button>
-            <button type="button" class="cipherBtn" id="descifrar">Descifrar</button>
+            <button type="button" class="cipherBtn" id="encodeButton">Cifrar</button>
+            <input type="number" min="1" max="33" placeholder="0" id="displacement">
+            <button type="button" class="cipherBtn" id="decodeButton">Descifrar</button>
           </div>
           <br>
-          <div class="entryText"><textarea name="textarea" id="outputMessage" rows="10" cols="20" placeholder="Acá estará tu mensaje crifrado."></textarea></div>
+          <div class="entryText"><textarea name="textarea" id="outputMessage" rows="10" cols="20" readonly="readonly" placeholder="Acá estará tu mensaje cifrado."></textarea></div>
+          <button type="button" class="eraseBtn" id="eraseButton">Limpiar</button>
         </div>
       </div>
       </section>
