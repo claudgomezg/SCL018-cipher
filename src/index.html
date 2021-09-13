@@ -29,7 +29,6 @@
           </section>
             
             <div class="firstTextContainer">
-              <br>
               <h2>Hasta hace unos años se reveló la correspondencia que mantenía la poetisa con su asistente Doris Dana.</h2>
               <h2>Estas cartas necesitan ser reveladas en esta deuda histórica que mantiene Chile con la escritora.</h2>
               <h2>Descifra el contenido de estas cartas.</h2>
@@ -39,7 +38,7 @@
     </section>
       
     <section style="display: none;" id="cipher">
-      <box-icon><img src="img/arrow.png" id="arrow"></box-icon>
+      <img src="img/arrow.png" id="arrow">
       <div class="columnContainer">
         <div class= "poemContainer">
           <section id="menu1">
@@ -126,13 +125,12 @@
 
         <div class="cipherContainer">
           <div class="entryText"><textarea name="textarea" rows="10" cols="20" id="message" placeholder="Ingresa el texto a cifrar aquí"></textarea></div>
-          <br>
+
           <div class="centerCipher">
             <button type="button" class="cipherBtn" id="encodeButton">Cifrar</button>
             <input type="number" min="1" max="33" placeholder="0" id="displacement">
             <button type="button" class="cipherBtn" id="decodeButton">Descifrar</button>
           </div>
-          <br>
           <div class="entryText"><textarea name="textarea" id="outputMessage" rows="10" cols="20" readonly="readonly" placeholder="Acá estará tu mensaje cifrado."></textarea></div>
           <button type="button" class="eraseBtn" id="eraseButton">Limpiar</button>
         </div>

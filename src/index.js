@@ -1,4 +1,3 @@
-// window.addEventListener("load", inicio, true); //listener test
 
 //declaración de variables para la sección home y sección cipher
 const firstPage = document.getElementById("home");
@@ -85,14 +84,14 @@ const textOut = document.getElementById("outputMessage");
 encondeBtn.addEventListener("click", () =>{
     const offset = document.getElementById("displacement").value;
     const textIn = document.getElementById("message").value;
-    textOut.value = cipher.encode(offset, textIn);
+    textOut.innerText = cipher.encode(offset, textIn);
 });
 
 //Listener botón decode
 decodeBtn.addEventListener("click", () => {
     const offset = document.getElementById("displacement").value;
     const textIn = document.getElementById("message").value;
-    textOut.value = cipher.decode(offset, textIn);
+    textOut.innerText = cipher.decode(offset, textIn);
 });
 
 //Función botón borrar
@@ -100,8 +99,8 @@ const eraseBtn = document.getElementById("eraseButton");
 
 eraseBtn.addEventListener("click", () => {
     document.getElementById("displacement").value = "";
-    document.getElementById("message").value = "";
-    document.getElementById("outputMessage").value = "";
+    document.getElementById("message").value= "";
+    document.getElementById("outputMessage").innerHTML = "";
 });
 
 // importación hoja cipher

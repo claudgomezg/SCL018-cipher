@@ -125,6 +125,7 @@ textarea {
     width: 400px;
     height: 200px;
     border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
     font-size: 12pt;
     padding: 6%;
     margin: 0%;
@@ -151,6 +152,7 @@ h3 {
 .centerCipher {
     display: flex;
     justify-content: center;
+    margin: 5%;
 }
 
 #displacement{
