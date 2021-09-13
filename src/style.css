@@ -42,7 +42,6 @@ h1 {
 .container {
     border-radius: 25px;
     background-color: rgb(0, 0, 0, .8);
-    /* opacity: 0.8; */
     padding: 15px;
     align-items: center;
     margin: 2%;
@@ -51,10 +50,10 @@ h1 {
 }
 
 figcaption{
-    color: rgb(242,237,220);
-    /* font-family: Typewritter; */
+    color: rgb(222,216,184);
+    font-family: "Times New Roman";
     font-size:9pt;
-    margin-left: 8%;
+    margin-left: 2%;
 }
 
 #DorisGabriela {
@@ -64,25 +63,29 @@ figcaption{
     border-radius: 5%;
 }
 
+#DorisGabriela:hover {
+    filter: grayscale(70%)
+}
+
 h2  {
-    align-content: center;
-    justify-content: center;
-    color: rgb(242,237,220);
+    text-align: justify;
+    color: rgb(222,216,184);
     font-size: 20pt;
     margin: 3%;
-    margin-top: 8%;
-    /* font-family: Typewritter; */
+    margin-top: 6%;
 }
 
 button {
     background: rgb(160,125,133, 0.6);
     border-radius: 12px;
     border: 1px solid rgba(0, 0, 0, 0.4);
-    color: rgb(242,237,220);
-    font-size: 18px;
+    color: rgb(222,216,184);
+    font-size: 22px;
     height: 50px;
-    width: 110px;
-    font-family: Typewritter;
+    width: 120px;
+    font-family: "Times New Roman";
+    font-weight: 600;
+    margin-bottom: 1%;
 }
 
 button:hover{
@@ -105,6 +108,7 @@ textarea {
     margin: 0%;
     text-align: justify;
     resize: none;
+    outline: none;
     font-family: Typewritter;
     background-image: url(img/letterBackground2.PNG);
 }
@@ -115,10 +119,11 @@ textarea {
 }
 
 h3 {
-    color:blanchedalmond;
+    color:rgb(222,216,184);
     font-size: 20pt;
     display: flex;
     justify-content: center;
+    font-family: "Times New Roman";
 }
 
 /* FIX THIS NONSENSE */
@@ -151,7 +156,7 @@ h3 {
 }
 
 .poemContainer {
-    box-shadow: 7px 13px 37px rgba(0, 0, 0, .5);
+    /* box-shadow: 7px 13px 37px rgba(0, 0, 0, .2); */
     display: inline-block;
     flex: 3;
     margin: 0 8px;
@@ -162,8 +167,6 @@ section p {
     overflow: hidden;
     max-height: 0;
     text-align: justify;
-    font-family: "Courier New", Courier, monospace;
-    /* background: #e4e4e4; */
     transition: all 0.2s ease-in;
     font-family: Typewritter;
     background-image: url(img/letterBackground2.PNG);
@@ -174,10 +177,12 @@ section a {
     display: block;
     text-align: left;
     padding: 10px;
-    font-family: "Courier New", Courier, monospace;
-    background-color: #212121;
-    border-bottom: 2px solid gray;
-    color: white;
+    font-size: 15pt;
+    font-family: "Times New Roman";
+    font-weight: 700;
+    background-color: rgb(0, 0, 0, .3);
+    border-bottom: 4px solid rgb(108,86,90);
+    color:rgb(222,216,184);
 }
 
 section:target p {
@@ -256,6 +261,7 @@ video {
         text-justify: distribute;
         margin-left: 10%;
         margin-right: 10%;
+        font-family: "Times New Roman";
     }
     video {
         flex-direction: column;
