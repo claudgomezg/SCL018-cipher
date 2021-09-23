@@ -1,44 +1,67 @@
+html {
+    height: 100%;
+}
+
+@font-face {
+    font-family: Header_Font;
+    src: url("Font/yugothil.ttf");
+}
+
+/* @font-face {
+    font-family: General_Font;
+    src: url("Font/Alatsi.ttf");
+} */
+
+
 body {
-    background-repeat: no-repeat;
+    margin:0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-size:cover;
+    background-position: center;
     background-image: url(img/background.png);
-    background-position: center center fixed;
 }
 
 header {
     background-color: #2E3E38;
     opacity: 0.75;
     display: flex;
-    margin: 0%;
+    justify-content: space-evenly;
+    height: 15%;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: Header_Font;
+    font-size: 50px;
+    color: white;
+    /* letter-spacing: 12px; */
 }
 
 .logo {
-    padding: 5px;
     display: flex;
-    float: right;  
+    justify-content: right;
+    height: 100%;
 }
-h1 {
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    display: flex;
-    font-size: 60px;
-    color: white;
-}
-.footer {
+
+footer {
     background-color: #2E3E38;
     opacity: 0.75;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-.footer {
     font-size: 16px;
     color: white;
-    justify-content: center;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 audio {
     justify-content: right;
+}
+
+p {
+    font-family: Header_Fo;
+    font-size: 20px;
 }
