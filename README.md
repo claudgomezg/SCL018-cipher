@@ -605,3 +605,84 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 * [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
 * [ ] UI: Permite filtrar data en base a una condición.
 * [ ] UI: Es _responsive_.
+
+
+
+
+# Data Lovers
+
+## Índice
+
+* [1. Definición](#1-definición)
+* [2. Fase de Planificación](#2-fase-de-planificación)
+* [3. Elaboración de Encuesta](#3-elaboración-de-encuesta)
+* [4.Historia de usuario](#4-historia-de-usuario)
+* [5. Prototipo de baja y alta fidelidad](#5-prototipo-de-baja-y-alta-fidelidad)
+* [6. Test de Usabilidad](#6-test-de-usabilidad)
+* [7. Página Finalizada](#7-página-finalizada)
+
+
+***
+
+## 1. Definición  
+
+# Studio Ghibli
+
+Studio Ghibli es un estudio de animación japonés, conocido por sus largometrajes
+animados como **Mi vecino Totoro**, **El viaje de Chihiro** o
+**El castillo ambulante**, entre otros grandes éxitos.
+
+Las animaciones tienen gran acogida a nivel mundial y algunas han recibido
+varias nominaciones y premios. De todo este fandom hay un grupo que desea poder
+interactuar y ver la información de las animaciones y sus personajes.
+
+## Hallazgos
+
+Para entender mejor qué información podrían necesitar nuestras usuarias,
+hicimos una rápida investigación (research) y estos son algunos de los
+hallazgos.
+
+- Studio Ghibli tiene varias animaciones, para nuestras usuarias es importante
+  saber cuántas y cuáles son.
+- Las animaciones tienen directorxs y productorxs. Estxs son las mentes detrás
+  de una gran animación. En Studio Ghibli hay directorxs y productorxs que han
+  colaborado en la creación de más de una animación. Por ello, es importante
+  para nuestra usuaria poder conocerlos y saber cuántas y cuáles son las
+  animaciones a las que dieron "vida".
+- Las animaciones tienen información relevante para nuestras usuarias, como
+  descripción, fecha de lanzamiento, peso, director, productor y personajes.
+- Cada animación tiene sus personajes, para nuestras usuarias es importante
+  saber cuántos y cuáles son
+- Los personajes tienen características únicas que la usuaria quiere saber, como
+  nombre, edad, género, especie, etc.
+- Las animaciones tienen locaciones y vehículos únicos en cada una. Para
+  nuestras usuarias es importante saber cuáles son.
+- Adicionalmente a esta información, para nuestras usuarias es importante poder
+  ver los tipos de especies que hay en cada animación.
+
+  
+ ## 2. Fase de Planificación
+
+  ## 3. Elaboración de Encuesta  
+  
+  ## 4. Historia de usuario 
+   
+![](src/img/historia_de_usuario.png)
+
+## 5. Prototipos
+### Prototipos de baja fidelidad
+*Landing*
+![](src\img\Prototipo_baja_fidelidad.png)
+
+*Vista desplegando información*
+![](src\img\Prototipo_baja_fidelidad2.png)
+### Prototipos de alta fidelidad
+*Landing*
+![](src/img/prototipo_alta_fidelidad.png)
+
+*Vista desplegando información*
+![](src/img/prototipo_alta_fidelidad2.png)
+
+## 6. Test de Usabilidad  
+
+## 7. Página Finalizada  
