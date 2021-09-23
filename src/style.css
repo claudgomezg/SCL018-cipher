@@ -7,29 +7,32 @@ html {
     src: url("Font/yugothil.ttf");
 }
 
-/* @font-face {
-    font-family: General_Font;
-    src: url("Font/Alatsi.ttf");
-} */
-
-
 body {
+    position: relative;
     margin:0;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-size:cover;
-    background-position: center;
-    background-image: url(img/background.png);
+    
 }
 
+body::before {
+    content: "";
+    background-image: url(img/background.png);
+    background-size:cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.7;
+
+}
 header {
-    background-color: #2E3E38;
-    opacity: 0.75;
+    position: relative;
+    background-color: #616C69;
     display: flex;
-    justify-content: space-evenly;
-    height: 15%;
+    justify-content: space-around;
 }
 
 h1 {
@@ -39,7 +42,6 @@ h1 {
     font-family: Header_Font;
     font-size: 50px;
     color: white;
-    /* letter-spacing: 12px; */
 }
 
 .logo {
@@ -49,8 +51,8 @@ h1 {
 }
 
 footer {
+    position: relative;
     background-color: #2E3E38;
-    opacity: 0.75;
     font-size: 16px;
     color: white;
     display: flex;
@@ -62,6 +64,11 @@ audio {
 }
 
 p {
-    font-family: Header_Fo;
+    position: relative;
+    font-family: Header_Font;
     font-size: 20px;
+}
+
+.container {
+    position: relative;
 }
