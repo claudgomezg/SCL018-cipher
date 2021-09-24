@@ -70,3 +70,49 @@ p {
 .container {
     position: relative;
 }
+
+/* NUEVO */
+
+.filterMenu {
+    display: flex;
+    flex-flow: column wrap;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color:#44A082;
+    opacity: 70%;
+    height: 10%;
+    margin-top: 0%;
+    padding: 12px;
+}
+
+.comboBox, input {
+    height: 50px;
+    width: 300px;
+    background-color: #44A082;
+    border: none;
+    box-shadow: 0px 3px 6px #000000;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 23px;
+    font-family: Header_Font;
+    outline: none;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+::placeholder {
+    color: white;
+}
+
+
+/* RECURSO PARA HACER LA PÁGINA RESPONSIVA */
+/* @media (min-width: 950px){
+
+    .container {
+
+    }
+} */
