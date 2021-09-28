@@ -685,4 +685,17 @@ hallazgos.
 
 ## 6. Test de Usabilidad  
 
+### Sprint 1:
+Durante este sprint se realizaron entrevistas personales y en grupo a distintos usuarios para probar la usabilidad del prototipo
+y se llegó a la conclusión de que era necesario modificar algunos elementos para mejorar su comportamiento. A raíz de ello, se agregó lo siguiente:
+- Se modifican los elementos de la barra de navegación en la versión mobile para que estos colapsen en columna y que se despliguen las opciones del combobox sin interferir en la correcta lectura de los otros filtros.
+- Se agregó un ícono de salir para cerrar los modales y volver a la página del landing.
+- Se modifica el texto del combobox Sort by por Order by para mejorar la comprensibilidad de la acción a realizar.
+### Sprint 2:
+
+### Sprint 3:
+
+### Sprint 4:
+
+
 ## 7. Página Finalizada  
